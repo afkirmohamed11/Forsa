@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
       <section className="relative min-h-screen flex items-center bg-gradient-to-r from-primary-900 to-primary-700 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+            src="public/about.jpg" 
             alt="Volunteers working together" 
             className="w-full h-full object-cover opacity-30"
           />
