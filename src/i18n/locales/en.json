@@ -1,0 +1,214 @@
+{
+  "nav": {
+    "home": "Home",
+    "activities": "Activities",
+    "donate": "Donate",
+    "collaborations": "Collaborations",
+    "contact": "Contact"
+  },
+  "home": {
+    "slogan": "Opportunities for All",
+    "description": "Forsa is a non-profit Moroccan association dedicated to creating opportunities for underserved communities through education, skill development, and community engagement.",
+    "cta": {
+      "learnMore": "Learn More",
+      "donate": "Donate",
+      "joinUs": "Join Us"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We believe that everyone deserves equal opportunities to thrive. Our mission is to bridge gaps in access to education, healthcare, and economic opportunities."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "A Morocco where every individual has the resources and support needed to achieve their full potential and contribute to society."
+    },
+    "impact": {
+      "title": "Our Impact",
+      "projects": "Projects Completed",
+      "communities": "Communities Served",
+      "volunteers": "Active Volunteers",
+      "beneficiaries": "Direct Beneficiaries"
+    },
+    "callToAction": {
+      "title": "Ready to make a difference?",
+      "description": "Join our community of changemakers and help us create more opportunities for those who need them most."
+    }
+  },
+  "activities": {
+    "title": "Our Activities",
+    "subtitle": "Discover how we're making a difference",
+    "filters": {
+      "all": "All",
+      "education": "Education",
+      "health": "Health",
+      "environment": "Environment"
+    },
+    "readMore": "Read More",
+    "discover": "Discover our activities",
+    "viewAll": "View All Activities",
+    "noActivities": "No activities found in this category.",
+    "getInvolved": {
+      "title": "Get Involved",
+      "description": "Want to participate in our activities or organize one in your community?",
+      "volunteerBtn": "Volunteer With Us",
+      "suggestBtn": "Suggest an Activity"
+    },
+    "backToActivities": "Back to Activities",
+    "beneficiaries": "Beneficiaries",
+    "volunteers": "Volunteers",
+    "partners": "Partners",
+    "tags": "Tags",
+    "share": "Share",
+    "shareWhatsApp": "Share on WhatsApp",
+    "gallery": "Gallery",
+    "tagLabels": {
+      "youth": "Youth",
+      "communitySupport": "Community Support", 
+      "guidance": "Guidance",
+      "career": "Career",
+      "academic": "Academic"
+    },
+    "sampleActivities": {
+      "schoolSupplies": {
+        "title": "School Supplies Distribution",
+        "description": "Providing essential school supplies to underprivileged children to support their education journey."
+      },
+      "healthWorkshop": {
+        "title": "Community Health Workshop",
+        "description": "Educating communities about preventive healthcare measures and healthy living practices."
+      },
+      "treePlanting": {
+        "title": "Tree Planting Initiative",
+        "description": "Combating climate change by planting trees and promoting environmental awareness."
+      },
+      "guidanceSessions": {
+        "title": "Academic and Career Guidance Sessions",
+        "description": "Organizing orientation sessions to help high school students make informed academic and career choices.",
+        "detailedDescription": "Forsa Association for Socio-Educational and Sports Development in Trougout inaugurates its activities with a guidance seminar for students of Trougout Qualifying High School entitled {Trougout Graduates Return Carrying Their Experiences for the Next Generation to Invest}.\n\nIn the context of the emergence of Forsa Association as a new civil society actor in the Trougout region and its surroundings, the association inaugurated its activities on 20/05/2025 with a guidance seminar under the slogan 'From Trougout to the Future' in partnership with the administration of Trougout Qualifying High School.\n\nThe seminar program included:\n> Student reception.\n> Speech by the Association President.\n> Speech by the Institution Principal.\n> Speech by the School Life Coordinator.\n> Introduction of guests.\n> Guest presentations:\n\n• **Mohamed Afkir** - National School of Applied Sciences in Al Hoceima/Data Engineering.\n\n• **Abubakar Bourbain** - Multidisciplinary Faculty in Nador/Public Law Department.\n\n• **Mohamed Baouch** - Faculty of Sciences and Technologies Al Hoceima, PhD in Environmental Chemistry and Water Treatment.\n\n• **Professor Moussa Afrmas** - Sociology and Philosophy prospects after Baccalaureate.\n\n> Cultural competition workshop.\n> Motivation and stress management workshop.\n> Workshop 'Share your Baccalaureate experience' with institution teachers' participation.\n> Closing remarks by Association President **Jamal Baqdour**.\n\nThis program was accompanied by a distinctive educational atmosphere and high interactive spirit from both facilitators and attendees, teachers and students, which energized the association's executive board and leadership to move forward with more strength and activity in the coming days, aiming to elevate civil society work and civic presence in the region to make it an exemplary model and a beacon to be emulated.",
+        "date": "May 20, 2025",
+        "location": "Trougout"
+      }
+    }
+  },
+  "donate": {
+    "title": "Support Our Cause",
+    "subtitle": "Your contribution makes a difference",
+    "description": "Your donation helps us continue our mission of creating opportunities for all. Every contribution, regardless of size, has a meaningful impact on the communities we serve.",
+    "bankTransfer": {
+      "title": "Bank Transfer Details",
+      "description": "You can support our mission by making a direct bank transfer using the details below. Simply visit your bank agency or use online banking to send your donation.",
+      "bankName": "Bank Name",
+      "bankNameValue": "Banque Populaire",
+      "accountHolder": "Account Holder",
+      "ribLabel": "RIB (Account Number)",
+      "copyRib": "Copy RIB",
+      "importantNote": "Important Note:",
+      "noteText": "Please include \"Donation - Your Name\" in the transfer reference to help us track your contribution. You can also send us an email at contact@forsa-association.org to notify us of your donation."
+    },
+    "form": {
+      "amount": "Donation Amount",
+      "custom": "Custom Amount",
+      "frequency": "Donation Frequency",
+      "oneTime": "One Time",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "info": "Personal Information",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "payment": "Payment Method",
+      "card": "Credit Card",
+      "paypal": "PayPal",
+      "bank": "Bank Transfer",
+      "submit": "Complete Donation",
+      "success": "Thank you for your donation!"
+    },
+    "impact": {
+      "title": "Your Impact",
+      "small": "Provides educational materials for one student for a month",
+      "medium": "Sponsors vocational training for one individual",
+      "large": "Funds a community development project",
+      "description": "Your generous contribution will help us continue our mission to create opportunities for the community. We believe in transparency and accountability, and we ensure that your donation is used effectively to create positive change."
+    },
+    "callToAction": {
+      "title": "Every Contribution Matters",
+      "description": "Whether big or small, your donation makes a difference in someone's life. Join us in creating a better future for all.",
+      "button": "Contact Us for More Information"
+    }
+  },
+  "collaborations": {
+    "title": "Our Partners & Collaborators",
+    "subtitle": "Together we achieve more",
+    "description": "We collaborate with various organizations, businesses, and institutions to maximize our impact and reach. Our partnerships are built on shared values and a common vision for a better future.",
+    "becomePartner": "Become a Partner",
+    "partnerTypes": {
+      "ngo": "Non-Profit",
+      "government": "Government", 
+      "corporate": "Corporate",
+      "education": "Education"
+    },
+    "partners": {
+      "educationMinistry": "Education Ministry"
+    },
+    "callToAction": {
+      "title": "Ready to Make a Difference Together?",
+      "description": "Join our network of partners and help us create more opportunities for communities in need.",
+      "button": "Contact Our Partnerships Team"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Your message has been sent. We'll get back to you soon!",
+      "successNote": "We value your message and will respond as soon as possible.",
+      "validation": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Email is invalid",
+        "subjectRequired": "Subject is required",
+        "messageRequired": "Message is required"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Working Hours",
+      "addressValue": "123 Rue Mohammed V, Casablanca, Morocco",
+      "phoneValue": "+212 522 123 456",
+      "emailValue": "contact@forsa-association.org",
+      "hoursValue": "Monday - Friday: 9AM - 5PM",
+      "hoursShort": "Mon-Fri: 9AM-5PM"
+    },
+    "social": {
+      "title": "Follow Us",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "location": "Location"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for doesn't exist or has been moved.",
+    "button": "Back to Home"
+  },
+  "footer": {
+    "description": "Forsa is a non-profit association dedicated to creating opportunities for all through education, and community development.",
+    "links": "Quick Links",
+    "subscribe": {
+      "title": "Stay Updated",
+      "placeholder": "Your email address",
+      "button": "Subscribe",
+      "success": "Thank you for subscribing!"
+    },
+    "copyright": "© 2025 Forsa Association. All rights reserved."
+  }
+}

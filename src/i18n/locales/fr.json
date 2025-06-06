@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "activities": "Activités",
+    "donate": "Faire un don",
+    "collaborations": "Collaborations",
+    "contact": "Contact"
+  },
+  "home": {
+    "slogan": "Des Opportunités pour Tous",
+    "description": "Forsa est une association marocaine à but non lucratif dédiée à la création d'opportunités pour les communautés défavorisées par l'éducation, le développement des compétences et l'engagement communautaire.",
+    "cta": {
+      "learnMore": "En savoir plus",
+      "donate": "Faire un don",
+      "joinUs": "Rejoignez-nous"
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Nous croyons que chacun mérite des opportunités égales pour s'épanouir. Notre mission est de combler les lacunes dans l'accès à l'éducation, aux soins de santé et aux opportunités économiques."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Un Maroc où chaque individu dispose des ressources et du soutien nécessaires pour réaliser son plein potentiel et contribuer à la société."
+    },
+    "impact": {
+      "title": "Notre Impact",
+      "projects": "Projets Réalisés",
+      "communities": "Communautés Servies",
+      "volunteers": "Bénévoles Actifs",
+      "beneficiaries": "Bénéficiaires Directs"
+    },
+    "callToAction": {
+      "title": "Prêt à faire la différence?",
+      "description": "Rejoignez notre communauté d'agents de changement et aidez-nous à créer plus d'opportunités pour ceux qui en ont le plus besoin."
+    }
+  },
+  "activities": {
+    "title": "Nos Activités",
+    "subtitle": "Découvrez comment nous faisons la différence",
+    "filters": {
+      "all": "Tous",
+      "education": "Éducation",
+      "health": "Santé",
+      "environment": "Environnement"
+    },
+    "readMore": "Lire Plus",
+    "discover": "Découvrez nos activités",
+    "viewAll": "Voir Toutes les Activités",
+    "noActivities": "Aucune activité trouvée dans cette catégorie.",
+    "getInvolved": {
+      "title": "Participez",
+      "description": "Vous souhaitez participer à nos activités ou en organiser une dans votre communauté?",
+      "volunteerBtn": "Faire du Bénévolat",
+      "suggestBtn": "Suggérer une Activité"
+    },
+    "backToActivities": "Retour aux Activités",
+    "beneficiaries": "Bénéficiaires",
+    "volunteers": "Bénévoles",
+    "partners": "Partenaires",
+    "tags": "Étiquettes",
+    "share": "Partager",
+    "shareWhatsApp": "Partager sur WhatsApp",
+    "gallery": "Galerie",
+    "tagLabels": {
+      "youth": "Jeunesse",
+      "communitySupport": "Soutien Communautaire",
+      "guidance": "Orientation",
+      "career": "Carrière", 
+      "academic": "Académique"
+    },
+    "sampleActivities": {
+      "schoolSupplies": {
+        "title": "Distribution de Fournitures Scolaires",
+        "description": "Fournir des fournitures scolaires essentielles aux enfants défavorisés pour soutenir leur parcours éducatif."
+      },
+      "healthWorkshop": {
+        "title": "Atelier de Santé Communautaire",
+        "description": "Éduquer les communautés sur les mesures de santé préventive et les pratiques de vie saine."
+      },
+      "treePlanting": {
+        "title": "Initiative de Plantation d'Arbres",
+        "description": "Lutter contre le changement climatique en plantant des arbres et en promouvant la sensibilisation environnementale."
+      },
+      "guidanceSessions": {
+        "title": "Sessions d'Orientation Académique et Professionnelle",
+        "description": "Organiser des sessions d'orientation pour aider les lycéens à faire des choix académiques et professionnels éclairés.",
+        "detailedDescription": "L'Association Forsa pour le Développement Socio-Éducatif et Sportif à Trougout inaugure ses activités avec un séminaire d'orientation au profit des élèves du Lycée Qualifiant de Trougout intitulé {Les Diplômés de Trougout Reviennent Porteurs de Leurs Expériences pour que la Prochaine Génération les Investisse}.\n\nDans le contexte de l'émergence de l'Association Forsa comme nouvel acteur associatif dans la région de Trougout et ses environs, l'association a inauguré ses activités le 20/05/2025 avec un séminaire d'orientation sous le slogan 'De Trougout vers l'Avenir' en partenariat avec l'administration du Lycée Qualifiant de Trougout.\n\nLe programme du séminaire comprenait :\n> Accueil des élèves.\n> Discours du Président de l'Association.\n> Discours du Directeur de l'Établissement.\n> Discours du Coordinateur de la Vie Scolaire.\n> Présentation des invités.\n> Interventions des invités :\n\n• **Mohamed Afkir** - École Nationale des Sciences Appliquées d'Al Hoceima/Ingénierie des Données.\n\n• **Abubakar Bourbain** - Faculté Pluridisciplinaire de Nador/Département de Droit Public.\n\n• **Mohamed Baouch** - Faculté des Sciences et Techniques d'Al Hoceima, Doctorat en Chimie Environnementale et Traitement de l'Eau.\n\n• **Professeur Moussa Afrmas** - Spécialité Sociologie et perspectives de la Philosophie après le Baccalauréat.\n\n> Atelier de concours culturel.\n> Atelier de motivation et gestion du stress.\n> Atelier 'Partagez votre expérience du Baccalauréat' avec la participation des enseignants de l'établissement.\n> Discours de clôture du Président de l'Association **Jamal Baqdour**.\n\nCe programme s'est déroulé dans une atmosphère éducative distinctive et un esprit interactif élevé tant de la part des animateurs que des participants, enseignants et élèves, ce qui a dynamisé le bureau exécutif de l'association et son leadership pour avancer avec plus de force et d'activité dans les jours à venir, visant à élever le travail associatif et la présence civique dans la région pour en faire un modèle exemplaire et un phare à suivre.",
+        "date": "20 Mai 2025",
+        "location": "Trougout"
+      }
+    }
+  },
+  "donate": {
+    "title": "Soutenez Notre Cause",
+    "subtitle": "Votre contribution fait la différence",
+    "description": "Votre don nous aide à poursuivre notre mission de créer des opportunités pour tous. Chaque contribution, quelle que soit sa taille, a un impact significatif sur les communautés que nous servons.",
+    "bankTransfer": {
+      "title": "Détails du Virement Bancaire",
+      "description": "Vous pouvez soutenir notre mission en effectuant un virement bancaire direct en utilisant les détails ci-dessous. Rendez-vous simplement dans votre agence bancaire ou utilisez la banque en ligne pour envoyer votre don.",
+      "bankName": "Nom de la Banque",
+      "bankNameValue": "Banque Populaire",
+      "accountHolder": "Titulaire du Compte",
+      "ribLabel": "RIB (Numéro de Compte)",
+      "copyRib": "Copier le RIB",
+      "importantNote": "Note Importante:",
+      "noteText": "Veuillez inclure \"Don - Votre Nom\" dans la référence du virement pour nous aider à suivre votre contribution. Vous pouvez également nous envoyer un email à contact@forsa-association.org pour nous notifier de votre don."
+    },
+    "form": {
+      "amount": "Montant du Don",
+      "custom": "Montant Personnalisé",
+      "frequency": "Fréquence du Don",
+      "oneTime": "Une Fois",
+      "monthly": "Mensuel",
+      "yearly": "Annuel",
+      "info": "Informations Personnelles",
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "payment": "Méthode de Paiement",
+      "card": "Carte de Crédit",
+      "paypal": "PayPal",
+      "bank": "Virement Bancaire",
+      "submit": "Compléter le Don",
+      "success": "Merci pour votre don!"
+    },
+    "impact": {
+      "title": "Votre Impact",
+      "small": "Fournit du matériel éducatif pour un étudiant pendant un mois",
+      "medium": "Parraine une formation professionnelle pour une personne",
+      "large": "Finance un projet de développement communautaire",
+      "description": "Votre généreuse contribution nous aidera à poursuivre notre mission de créer des opportunités pour la communauté. Nous croyons en la transparence et la responsabilité, et nous nous assurons que votre don est utilisé efficacement pour créer un changement positif."
+    },
+    "callToAction": {
+      "title": "Chaque Contribution Compte",
+      "description": "Qu'elle soit grande ou petite, votre donation fait la différence dans la vie de quelqu'un. Rejoignez-nous pour créer un avenir meilleur pour tous.",
+      "button": "Contactez-nous pour Plus d'Informations"
+    }
+  },
+  "collaborations": {
+    "title": "Nos Partenaires & Collaborateurs",
+    "subtitle": "Ensemble, nous accomplissons davantage",
+    "description": "Nous collaborons avec diverses organisations, entreprises et institutions pour maximiser notre impact et notre portée. Nos partenariats sont fondés sur des valeurs partagées et une vision commune pour un avenir meilleur.",
+    "becomePartner": "Devenir Partenaire",
+    "partnerTypes": {
+      "government": "Partenaires gouvernementaux",
+      "ngo": "Organisations non gouvernementales",
+      "business": "Partenaires commerciaux",
+      "educational": "Institutions éducatives"
+    },
+    "partners": {
+      "educationMinistry": "Ministère de l'Éducation"
+    },
+    "callToAction": {
+      "title": "Vous souhaitez collaborer avec nous ?",
+      "description": "Rejoignez-nous dans notre mission pour créer un impact positif dans la communauté.",
+      "button": "Contactez-nous"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous aimerions avoir de vos nouvelles",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "submit": "Envoyer le Message",
+      "success": "Votre message a été envoyé. Nous vous répondrons bientôt!",
+      "successDescription": "Nous apprécions votre message et vous répondrons dès que possible."
+    },
+    "validation": {
+      "nameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "L'email n'est pas valide",
+      "subjectRequired": "Le sujet est requis",
+      "messageRequired": "Le message est requis"
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "hours": "Heures d'Ouverture",
+      "addressValue": "123 Rue Mohammed V, Casablanca, Maroc",
+      "phoneValue": "+212 522 123 456",
+      "emailValue": "contact@forsa-association.org",
+      "hoursValue": "Lundi - Vendredi: 9h - 17h"
+    },
+    "location": "Localisation",
+    "social": {
+      "title": "Suivez-nous",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    }
+  },
+  "notFound": {
+    "title": "Page Non Trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "button": "Retour à l'Accueil"
+  },
+  "footer": {
+    "description": "Forsa est une association à but non lucratif dédiée à la création d'opportunités pour tous par l'éducation, le développement communautaire et des initiatives d'autonomisation.",
+    "links": "Liens Rapides",
+    "subscribe": {
+      "title": "Restez Informé",
+      "placeholder": "Votre adresse email",
+      "button": "S'abonner",
+      "success": "Merci pour votre abonnement!"
+    },
+    "copyright": "© 2025 Association Forsa. Tous droits réservés."
+  }
+}
