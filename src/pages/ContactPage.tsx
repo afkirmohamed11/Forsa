@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { AlertCircle, Clock, Mail, MapPin, Phone, Send } from 'lucide-react';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -13,6 +14,8 @@ const ContactPage: React.FC = () => {
   });
   const [formErrors, setFormErrors] = useState<{[key: string]: string}>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -53,22 +56,63 @@ const ContactPage: React.FC = () => {
     return Object.keys(errors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (validateForm()) {
-      // Here would be the logic to send the message
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
+      setIsLoading(true);
+      setError('');
+
+      try {
+        // EmailJS configuration
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const contactTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT;
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+        // Check if environment variables are set
+        if (!serviceId || !contactTemplateId || !publicKey) {
+          throw new Error('EmailJS configuration missing');
+        }
+
+        const submissionDate = new Date().toLocaleString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+
+        // Template parameters for contact form
+        const templateParams = {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          submission_date: submissionDate,
+          to_email: 'mohammedafk002@gmail.com'
+        };
+
+        // Send email to admin
+        await emailjs.send(serviceId, contactTemplateId, templateParams, publicKey);
+
+        // Success
+        setIsSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+        
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      } catch (err) {
+        console.error('Contact form error:', err);
+        setError(t('contact.form.error'));
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -192,11 +236,24 @@ const ContactPage: React.FC = () => {
                     )}
                   </div>
                   
-                  <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
-                    <Button variant="primary" size="lg" fullWidth>
-                      {t('contact.form.submit')}
-                    </Button>
-                  </a>
+                  {error && (
+                    <div className="p-4 bg-red-50 dark:bg-red-900 border border-red-200 dark:border-red-700 rounded-md">
+                      <p className="text-red-600 dark:text-red-400 flex items-center">
+                        <AlertCircle size={16} className="mr-2" />
+                        {error}
+                      </p>
+                    </div>
+                  )}
+                  
+                  <Button 
+                    type="submit" 
+                    variant="primary" 
+                    size="lg" 
+                    fullWidth
+                    disabled={isLoading}
+                  >
+                    {isLoading ? 'Sending...' : t('contact.form.submit')}
+                  </Button>
                 </form>
               )}
             </div>

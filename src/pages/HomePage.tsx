@@ -186,16 +186,16 @@ const HomePage: React.FC = () => {
             {t('home.callToAction.description')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
+            <Link to="/donate">
               <Button variant="outline" size="lg" className="!bg-white !text-black !border-white hover:!bg-orange-500 hover:!text-white">
                 {t('home.cta.donate')}
               </Button>
-            </a>
-            <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="/contact">
               <Button variant="outline" size="lg" className="!bg-white !text-black !border-white hover:!bg-orange-500 hover:!text-white">
                 {t('home.cta.joinUs')}
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

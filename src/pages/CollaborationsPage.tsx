@@ -85,7 +85,7 @@ const CollaborationsPage: React.FC = () => {
               <Button 
                 variant="primary" 
                 size="lg" 
-                className="bg-white text-black hover:bg-gray-100"
+                className="!bg-white !text-black !border-white hover:!bg-orange-500 hover:!text-white"
               >
                 {t('collaborations.callToAction.button')}
               </Button>

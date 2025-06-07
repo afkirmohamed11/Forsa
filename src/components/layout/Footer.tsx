@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { Clock, Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -7,14 +8,53 @@ const Footer: React.FC = () => {
   const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      // Here would be the subscription logic
+    if (!email) return;
+
+    setIsLoading(true);
+    setError('');
+
+    try {
+      // EmailJS configuration
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const welcomeTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_WELCOME;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      // Check if environment variables are set
+      if (!serviceId || !welcomeTemplateId || !publicKey) {
+        throw new Error('EmailJS configuration missing');
+      }
+
+      const subscriptionDate = new Date().toLocaleString('ar-MA', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+
+      // Template parameters for welcome email
+      const templateParams = {
+        subscriber_email: email,
+        subscription_date: subscriptionDate
+      };
+
+      // Send welcome email to subscriber
+      await emailjs.send(serviceId, welcomeTemplateId, templateParams, publicKey);
+
+      // Success
       setIsSubscribed(true);
       setEmail('');
-      setTimeout(() => setIsSubscribed(false), 3000);
+      setTimeout(() => setIsSubscribed(false), 5000);
+    } catch (err) {
+      console.error('Subscription error:', err);
+      setError(t('footer.subscribe.error'));
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -28,7 +68,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center">
                   <img src="/forsa.png" alt="Forsa Logo" className="h-8 w-auto" />
-                  <span className="ml-2 text-xl font-bold text-gray-900 dark:text-white">
+                  <span className="ml-2 text-xl font-bold text-white">
                     Forsa
                   </span>
                 </Link>
@@ -101,14 +141,19 @@ const Footer: React.FC = () => {
                     placeholder={t('footer.subscribe.placeholder')}
                     className="px-4 py-2 rounded-l text-gray-800 w-full focus:outline-none focus:ring-2 focus:ring-primary-500"
                     required
+                    disabled={isLoading}
                   />
                   <button
                     type="submit"
-                    className="bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-r text-white font-medium transition-colors"
+                    disabled={isLoading}
+                    className="bg-primary-500 hover:bg-primary-600 disabled:bg-gray-400 disabled:cursor-not-allowed px-4 py-2 rounded-r text-white font-medium transition-colors"
                   >
-                    {t('footer.subscribe.button')}
+                    {isLoading ? '...' : t('footer.subscribe.button')}
                   </button>
                 </div>
+                {error && (
+                  <p className="text-red-400 text-sm mt-2">{error}</p>
+                )}
               </form>
             )}
           </div>

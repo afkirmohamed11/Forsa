@@ -95,7 +95,7 @@
       "copyRib": "Copier le RIB",
       "copyIban": "Copier l'IBAN",
       "importantNote": "Note Importante:",
-      "noteText": "Veuillez inclure \"Don - Votre Nom\" dans la référence du virement pour nous aider à suivre votre contribution. Vous pouvez également nous envoyer un email à contact@forsa-association.org ou un message WhatsApp au +212 675 900 514 pour nous notifier de votre don."
+      "noteText": "Veuillez inclure \"Don - Votre Nom\" dans la référence du virement pour nous aider à suivre votre contribution. Vous pouvez également nous envoyer un email à association.forsa.trougout@gmail.com ou un message WhatsApp au +212 675 900 514 pour nous notifier de votre don."
     },
     "form": {
       "amount": "Montant du Don",
@@ -158,7 +158,8 @@
       "message": "Votre Message",
       "submit": "Envoyer le Message",
       "success": "Votre message a été envoyé. Nous vous répondrons bientôt!",
-      "successDescription": "Nous apprécions votre message et vous répondrons dès que possible."
+      "successDescription": "Nous apprécions votre message et vous répondrons dès que possible.",
+      "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
     },
     "validation": {
       "nameRequired": "Le nom est requis",
@@ -175,7 +176,7 @@
       "hours": "Heures d'Ouverture",
       "addressValue": "Trougout Driouch, Maroc",
       "phoneValue": "+212 675 900 514",
-      "emailValue": "contact@forsa-association.org",
+      "emailValue": "association.forsa.trougout@gmail.com",
       "hoursValue": "Lundi - Vendredi: 9h - 17h",
       "hoursShort": "Lun-Ven: 9h-17h"
     },
@@ -199,7 +200,8 @@
       "title": "Restez Informé",
       "placeholder": "Votre adresse email",
       "button": "S'abonner",
-      "success": "Merci pour votre abonnement!"
+      "success": "Merci pour votre abonnement!",
+      "error": "Une erreur s'est produite lors de l'envoi de votre abonnement. Veuillez réessayer."
     },
     "copyright": "© 2025 Association Forsa. Tous droits réservés."
   }

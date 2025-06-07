@@ -10,8 +10,8 @@ const DonatePage: React.FC = () => {
   const bankDetails = {
     bankName: t('donate.bankTransfer.bankNameValue'),
     accountHolder: "Association Forsa",
-    rib: "001 810 0000123456789012 34",
-    iban: "MA64 001 810 0000123456789012 34",
+    rib: "350 810 000000001309248846",
+    iban: "MA64 350 810 000000001309248846",
     swift: "BMCEMAMC"
   };
 

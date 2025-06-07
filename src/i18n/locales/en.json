@@ -95,7 +95,7 @@
       "copyRib": "Copy RIB",
       "copyIban": "Copy IBAN",
       "importantNote": "Important Note:",
-      "noteText": "Please include \"Donation - Your Name\" in the transfer reference to help us track your contribution. You can also send us an email at contact@forsa-association.org or a WhatsApp message to +212 675 900 514 to notify us of your donation."
+      "noteText": "Please include \"Donation - Your Name\" in the transfer reference to help us track your contribution. You can also send us an email at association.forsa.trougout@gmail.com or a WhatsApp message to +212 675 900 514 to notify us of your donation."
     },
     "form": {
       "amount": "Donation Amount",
@@ -158,14 +158,15 @@
       "message": "Your Message",
       "submit": "Send Message",
       "success": "Your message has been sent. We'll get back to you soon!",
-      "successNote": "We value your message and will respond as soon as possible.",
-      "validation": {
-        "nameRequired": "Name is required",
-        "emailRequired": "Email is required",
-        "emailInvalid": "Email is invalid",
-        "subjectRequired": "Subject is required",
-        "messageRequired": "Message is required"
-      }
+      "successDescription": "We value your message and will respond as soon as possible.",
+      "error": "An error occurred while sending your message. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Email is invalid",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required"
     },
     "info": {
       "title": "Contact Information",
@@ -175,7 +176,7 @@
       "hours": "Working Hours",
       "addressValue": "Trougout Driouch, Morocco",
       "phoneValue": "+212 675 900 514",
-      "emailValue": "contact@forsa-association.org",
+      "emailValue": "association.forsa.trougout@gmail.com",
       "hoursValue": "Monday - Friday: 9AM - 5PM",
       "hoursShort": "Mon-Fri: 9AM-5PM"
     },
@@ -199,7 +200,8 @@
       "title": "Stay Updated",
       "placeholder": "Your email address",
       "button": "Subscribe",
-      "success": "Thank you for subscribing!"
+      "success": "Thank you for subscribing!",
+      "error": "An error occurred while sending your subscription. Please try again."
     },
     "copyright": "© 2025 Forsa Association. All rights reserved."
   }
