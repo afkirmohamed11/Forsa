@@ -192,9 +192,11 @@ const ContactPage: React.FC = () => {
                     )}
                   </div>
                   
-                  <Button type="submit" variant="primary" size="lg" fullWidth>
-                    {t('contact.form.submit')}
-                  </Button>
+                  <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
+                    <Button variant="primary" size="lg" fullWidth>
+                      {t('contact.form.submit')}
+                    </Button>
+                  </a>
                 </form>
               )}
             </div>

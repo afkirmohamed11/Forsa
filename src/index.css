@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Account for fixed header when scrolling to sections */
+section {
+  scroll-margin-top: 6rem; /* Adjust based on header height */
+}
+
+/* For better scroll behavior with fixed header */
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 5rem; /* Smaller margin for mobile */
+  }
+}

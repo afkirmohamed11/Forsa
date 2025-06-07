@@ -1,4 +1,4 @@
-import { ArrowLeft, Share2, Tag } from 'lucide-react';
+import { ArrowLeft, Facebook, Share2, Tag } from 'lucide-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
@@ -10,28 +10,59 @@ const ActivityPage: React.FC = () => {
   const { t } = useTranslation();
 
   // Mock data - In a real app, this would come from an API
-  const activity = {
-    id: 1,
-    title: t('activities.sampleActivities.guidanceSessions.title'),
-    description: t('activities.sampleActivities.guidanceSessions.description'),
-    date: t('activities.sampleActivities.guidanceSessions.date'),
-    location: t('activities.sampleActivities.guidanceSessions.location'),
-    category: 'education',
-    tags: [t('activities.filters.education'), t('activities.tagLabels.youth'), t('activities.tagLabels.communitySupport')],
-    gallery: [
-      '/activity1_1.jpg',
-      '/activity1_2.jpg',
-      '/activity1_3.jpg',
-      '/activity1_4.jpg',
-      '/activity1_5.jpg',
-      '/activity1_6.jpg'
-    ],
-    impact: {
-      beneficiaries: 60,
-      volunteers: 3,
-      partners: 2
+  const getActivityData = (activityId: string) => {
+    switch (activityId) {
+      case '1':
+        return {
+          id: 1,
+          title: t('activities.sampleActivities.guidanceSessions.title'),
+          description: t('activities.sampleActivities.guidanceSessions.description'),
+          detailedDescription: t('activities.sampleActivities.guidanceSessions.detailedDescription'),
+          date: t('activities.sampleActivities.guidanceSessions.date'),
+          location: t('activities.sampleActivities.guidanceSessions.location'),
+          category: 'education',
+          facebookUrl: 'https://www.facebook.com/share/p/1DneHGCzpB/',
+          tags: [t('activities.filters.education'), t('activities.tagLabels.youth'), t('activities.tagLabels.communitySupport')],
+          gallery: [
+            '/activity1_1.jpg',
+            '/activity1_2.jpg',
+            '/activity1_3.jpg',
+            '/activity1_4.jpg',
+            '/activity1_5.jpg',
+            '/activity1_6.jpg'
+          ],
+          impact: {
+            beneficiaries: 60,
+            volunteers: 3,
+            partners: 2
+          }
+        };       
+      default:
+        return null;
     }
   };
+
+  const activity = getActivityData(id || '1');
+
+  if (!activity) {
+    return (
+      <div className="pt-24 pb-20">
+        <div className="container mx-auto px-4 text-center py-20">
+          <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+            {t('notFound.title')}
+          </h1>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">
+            {t('notFound.description')}
+          </p>
+          <Link to="/activities">
+            <Button variant="primary">
+              {t('activities.backToActivities')}
+            </Button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   const handleShare = () => {
     const text = `Check out ${activity.title} by Forsa Association!`;
@@ -102,7 +133,7 @@ const ActivityPage: React.FC = () => {
             {/* Description */}
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                {t('activities.sampleActivities.guidanceSessions.detailedDescription')}
+                {activity.detailedDescription}
               </p>
             </div>
 
@@ -162,16 +193,36 @@ const ActivityPage: React.FC = () => {
                   <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
                     {t('activities.share')}
                   </h3>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    fullWidth
-                    onClick={handleShare}
-                    className="flex items-center justify-center"
-                  >
-                    <Share2 size={20} className="mr-2" />
-                    {t('activities.shareWhatsApp')}
-                  </Button>
+                  <div className="space-y-3">
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      fullWidth
+                      onClick={handleShare}
+                      className="flex items-center justify-center"
+                    >
+                      <Share2 size={20} className="mr-2" />
+                      {t('activities.shareWhatsApp')}
+                    </Button>
+                    {activity.facebookUrl && (
+                      <a 
+                        href={activity.facebookUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full"
+                      >
+                        <Button
+                          variant="primary"
+                          size="lg"
+                          fullWidth
+                          className="flex items-center justify-center"
+                        >
+                          <Facebook size={20} className="mr-2" />
+                          {t('activities.seeOnFacebook')}
+                        </Button>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </Card>

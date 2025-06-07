@@ -1,4 +1,4 @@
-import { ArrowRight, Calendar, MapPin } from 'lucide-react';
+import { ArrowRight, Calendar, Facebook, MapPin } from 'lucide-react';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -19,6 +19,7 @@ const ActivitiesPage: React.FC = () => {
       location: t('activities.sampleActivities.guidanceSessions.location'),
       category: 'education',
       image: '/activity1_1.jpg',
+      facebookUrl: 'https://www.facebook.com/share/p/1DneHGCzpB/',
       images: [
         '/activity1_1.jpg',
         '/activity1_2.jpg',
@@ -79,9 +80,9 @@ const ActivitiesPage: React.FC = () => {
         {/* Activities Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredActivities.map((activity) => (
-            <Link key={activity.id} to={`/activities/${activity.id}`} className="block">
-              <Card hover className="h-full animate-slide-up cursor-pointer transition-transform hover:scale-105">
-                {/* Image Gallery */}
+            <Card key={activity.id} hover className="h-full animate-slide-up transition-transform hover:scale-105">
+              {/* Image Gallery */}
+              <Link to={`/activities/${activity.id}`} className="block">
                 <div className="relative">
                   <CardMedia 
                     src={activity.image}
@@ -114,34 +115,55 @@ const ActivitiesPage: React.FC = () => {
                     </div>
                   </div>
                 )}
+              </Link>
                 
-                <CardContent>
-                  <div className="mb-2">
-                    <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${categoryColors[activity.category as keyof typeof categoryColors]}`}>
-                      {categories.find(cat => cat.value === activity.category)?.label}
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+              <CardContent>
+                <div className="mb-2">
+                  <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${categoryColors[activity.category as keyof typeof categoryColors]}`}>
+                    {categories.find(cat => cat.value === activity.category)?.label}
+                  </span>
+                </div>
+                <Link to={`/activities/${activity.id}`}>
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2 hover:text-primary-500 transition-colors">
                     {activity.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    {activity.description}
-                  </p>
-                  <div className="flex items-center text-gray-500 dark:text-gray-400 mb-1">
-                    <Calendar size={16} className="mr-2" />
-                    <span>{activity.date}</span>
-                  </div>
-                  <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4">
-                    <MapPin size={16} className="mr-2" />
-                    <span>{activity.location}</span>
-                  </div>
-                  <div className="inline-flex items-center text-primary-500 hover:text-primary-600 font-medium">
-                    <span className="mr-2">{t('activities.readMore')}</span>
-                    <ArrowRight size={16} />
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+                </Link>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  {activity.description}
+                </p>
+                <div className="flex items-center text-gray-500 dark:text-gray-400 mb-1">
+                  <Calendar size={16} className="mr-2" />
+                  <span>{activity.date}</span>
+                </div>
+                <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4">
+                  <MapPin size={16} className="mr-2" />
+                  <span>{activity.location}</span>
+                </div>
+                
+                {/* Action buttons */}
+                <div className="flex gap-2">
+                  <Link to={`/activities/${activity.id}`} className="flex-1">
+                    <Button variant="outline" size="sm" fullWidth>
+                      <span className="mr-2">{t('activities.readMore')}</span>
+                      <ArrowRight size={16} />
+                    </Button>
+                  </Link>
+                  {activity.facebookUrl && (
+                    <a 
+                      href={activity.facebookUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button variant="primary" size="sm" fullWidth>
+                        <Facebook size={16} className="mr-2" />
+                        {t('activities.seeOnFacebook')}
+                      </Button>
+                    </a>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
 

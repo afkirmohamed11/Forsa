@@ -8,7 +8,7 @@
   },
   "home": {
     "slogan": "Opportunities for All",
-    "description": "Forsa is a non-profit Moroccan association dedicated to creating opportunities for underserved communities through education, skill development, and community engagement.",
+    "description": "Forsa is a dynamic non-profit based in Trougout, Driouch, committed to education, social integration, and youth empowerment through cultural, educational, and sports initiatives. It serves all segments of the local population, fostering solidarity, lifelong learning, and active citizenship.",
     "cta": {
       "learnMore": "Learn More",
       "donate": "Donate",
@@ -16,14 +16,15 @@
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We believe that everyone deserves equal opportunities to thrive. Our mission is to bridge gaps in access to education, healthcare, and economic opportunities."
+      "description": "To support education, culture, and social development in Trougout through inclusive programs that empower youth and strengthen community ties."
     },
     "vision": {
       "title": "Our Vision",
-      "description": "A Morocco where every individual has the resources and support needed to achieve their full potential and contribute to society."
+      "description": "A community where everyone has the chance to learn, grow, and actively contribute to a better future."
     },
     "impact": {
       "title": "Our Impact",
+      "subtitle": "Together, we're making a real difference in communities across the region",
       "projects": "Projects Completed",
       "communities": "Communities Served",
       "volunteers": "Active Volunteers",
@@ -49,7 +50,7 @@
     "noActivities": "No activities found in this category.",
     "getInvolved": {
       "title": "Get Involved",
-      "description": "Want to participate in our activities or organize one in your community?",
+      "description": "Want to participate in our activities or organize one in the community?",
       "volunteerBtn": "Volunteer With Us",
       "suggestBtn": "Suggest an Activity"
     },
@@ -60,6 +61,7 @@
     "tags": "Tags",
     "share": "Share",
     "shareWhatsApp": "Share on WhatsApp",
+    "seeOnFacebook": "See on Facebook",
     "gallery": "Gallery",
     "tagLabels": {
       "youth": "Youth",
@@ -69,22 +71,10 @@
       "academic": "Academic"
     },
     "sampleActivities": {
-      "schoolSupplies": {
-        "title": "School Supplies Distribution",
-        "description": "Providing essential school supplies to underprivileged children to support their education journey."
-      },
-      "healthWorkshop": {
-        "title": "Community Health Workshop",
-        "description": "Educating communities about preventive healthcare measures and healthy living practices."
-      },
-      "treePlanting": {
-        "title": "Tree Planting Initiative",
-        "description": "Combating climate change by planting trees and promoting environmental awareness."
-      },
       "guidanceSessions": {
-        "title": "Academic and Career Guidance Sessions",
+        "title": "Academic and Career Guidance Session",
         "description": "Organizing orientation sessions to help high school students make informed academic and career choices.",
-        "detailedDescription": "Forsa Association for Socio-Educational and Sports Development in Trougout inaugurates its activities with a guidance seminar for students of Trougout Qualifying High School entitled {Trougout Graduates Return Carrying Their Experiences for the Next Generation to Invest}.\n\nIn the context of the emergence of Forsa Association as a new civil society actor in the Trougout region and its surroundings, the association inaugurated its activities on 20/05/2025 with a guidance seminar under the slogan 'From Trougout to the Future' in partnership with the administration of Trougout Qualifying High School.\n\nThe seminar program included:\n> Student reception.\n> Speech by the Association President.\n> Speech by the Institution Principal.\n> Speech by the School Life Coordinator.\n> Introduction of guests.\n> Guest presentations:\n\n• **Mohamed Afkir** - National School of Applied Sciences in Al Hoceima/Data Engineering.\n\n• **Abubakar Bourbain** - Multidisciplinary Faculty in Nador/Public Law Department.\n\n• **Mohamed Baouch** - Faculty of Sciences and Technologies Al Hoceima, PhD in Environmental Chemistry and Water Treatment.\n\n• **Professor Moussa Afrmas** - Sociology and Philosophy prospects after Baccalaureate.\n\n> Cultural competition workshop.\n> Motivation and stress management workshop.\n> Workshop 'Share your Baccalaureate experience' with institution teachers' participation.\n> Closing remarks by Association President **Jamal Baqdour**.\n\nThis program was accompanied by a distinctive educational atmosphere and high interactive spirit from both facilitators and attendees, teachers and students, which energized the association's executive board and leadership to move forward with more strength and activity in the coming days, aiming to elevate civil society work and civic presence in the region to make it an exemplary model and a beacon to be emulated.",
+        "detailedDescription": "Forsa Association for Socio-Educational and Sports Development in Trougout launched its activities with a guidance seminar for students of Trougout Qualifying High School, titled 'Trougout Graduates Return Carrying Their Experiences for the Next Generation to Invest.' As a newly emerging civil society actor in the Trougout region, the association held its inaugural event on 20/05/2025 under the slogan 'From Trougout to the Future,' in partnership with the school's administration. The seminar program included student reception, speeches by the Association President, the School Principal, and the School Life Coordinator, introduction of guests, and guest presentations: Mohamed Afkir – National School of Applied Sciences in Al Hoceima / Data Engineering, Abubakar Bourbain – Multidisciplinary Faculty in Nador / Public Law Department, Mohamed Baouch – Faculty of Sciences and Technologies in Al Hoceima / PhD in Environmental Chemistry and Water Treatment, and Professor Moussa Afrmas – Insights into Sociology and Philosophy after the Baccalaureate. Additional activities included a cultural competition workshop, a motivation and stress management session, a 'Share your Baccalaureate experience' workshop with school teachers, and closing remarks by Association President Jamal Baqdour. The seminar created a vibrant educational atmosphere and strong interaction among participants — students, teachers, and facilitators — inspiring the association's leadership to continue its mission with renewed energy, aiming to strengthen civic engagement and youth empowerment in the region.",
         "date": "May 20, 2025",
         "location": "Trougout"
       }
@@ -98,12 +88,14 @@
       "title": "Bank Transfer Details",
       "description": "You can support our mission by making a direct bank transfer using the details below. Simply visit your bank agency or use online banking to send your donation.",
       "bankName": "Bank Name",
-      "bankNameValue": "Banque Populaire",
+      "bankNameValue": "Barid Bank",
       "accountHolder": "Account Holder",
       "ribLabel": "RIB (Account Number)",
+      "ibanLabel": "IBAN",
       "copyRib": "Copy RIB",
+      "copyIban": "Copy IBAN",
       "importantNote": "Important Note:",
-      "noteText": "Please include \"Donation - Your Name\" in the transfer reference to help us track your contribution. You can also send us an email at contact@forsa-association.org to notify us of your donation."
+      "noteText": "Please include \"Donation - Your Name\" in the transfer reference to help us track your contribution. You can also send us an email at contact@forsa-association.org or a WhatsApp message to +212 675 900 514 to notify us of your donation."
     },
     "form": {
       "amount": "Donation Amount",
@@ -182,7 +174,7 @@
       "email": "Email",
       "hours": "Working Hours",
       "addressValue": "Trougout Driouch, Morocco",
-      "phoneValue": "+212 522 123 456",
+      "phoneValue": "+212 675 900 514",
       "emailValue": "contact@forsa-association.org",
       "hoursValue": "Monday - Friday: 9AM - 5PM",
       "hoursShort": "Mon-Fri: 9AM-5PM"

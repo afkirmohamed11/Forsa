@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Route, Routes } from 'react-router-dom';
 
 // Layouts
 import Layout from './components/layout/Layout';
+import ScrollToTop from './components/layout/ScrollToTop';
 
 // Pages
-import HomePage from './pages/HomePage';
 import ActivitiesPage from './pages/ActivitiesPage';
 import ActivityPage from './pages/ActivityPage';
-import DonatePage from './pages/DonatePage';
 import CollaborationsPage from './pages/CollaborationsPage';
 import ContactPage from './pages/ContactPage';
+import DonatePage from './pages/DonatePage';
+import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 // Context
-import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   const { i18n } = useTranslation();
@@ -50,6 +51,7 @@ function App() {
   return (
     <LanguageProvider>
       <ThemeProvider>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />

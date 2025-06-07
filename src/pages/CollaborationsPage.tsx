@@ -81,13 +81,15 @@ const CollaborationsPage: React.FC = () => {
             <p className="text-xl mb-8">
               {t('collaborations.callToAction.description')}
             </p>
-            <Button 
-              variant="primary" 
-              size="lg" 
-              className="bg-white text-black hover:bg-gray-100"
-            >
-              {t('collaborations.callToAction.button')}
-            </Button>
+            <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="bg-white text-black hover:bg-gray-100"
+              >
+                {t('collaborations.callToAction.button')}
+              </Button>
+            </a>
           </div>
         </div>
       </div>

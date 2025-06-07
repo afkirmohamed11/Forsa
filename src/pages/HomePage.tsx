@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-r from-primary-900 to-primary-700 overflow-hidden">
+      <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-r from-primary-900 to-primary-700 overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src="/about.jpg" 
@@ -28,19 +28,21 @@ const HomePage: React.FC = () => {
               {t('home.description')}
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button variant="primary" size="lg">
-                {t('home.cta.learnMore')}
-              </Button>
-              <Link to="/donate">
+              <a href="#about">
+                <Button variant="primary" size="lg">
+                  {t('home.cta.learnMore')}
+                </Button>
+              </a>
+              <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
                 <Button variant="secondary" size="lg">
                   {t('home.cta.donate')}
                 </Button>
-              </Link>
-              <Link to="/contact">
+              </a>
+              <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm">
                   {t('home.cta.joinUs')}
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -49,7 +51,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section id="about" className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
@@ -72,10 +74,14 @@ const HomePage: React.FC = () => {
                   {t('home.vision.description')}
                 </p>
               </div>
-              <Link to="/activities" className="inline-flex items-center text-primary-500 hover:text-primary-600 font-medium">
-                <span className="mr-2">{t('activities.discover')}</span>
-                <ArrowRight size={16} />
-              </Link>
+              <div className="flex gap-4 mt-6">
+                <a href="#activities" className="text-primary-500 hover:text-primary-600 font-medium">
+                  {t('activities.discover')} →
+                </a>
+                <a href="#contact" className="text-primary-500 hover:text-primary-600 font-medium">
+                  Get Involved →
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -84,7 +90,7 @@ const HomePage: React.FC = () => {
      
 
       {/* Recent Activities Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section id="activities" className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('activities.title')}</h2>
@@ -133,24 +139,63 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Our Impact Section - Commented out for now */}
+      {/* 
+      <section className="py-20 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('home.impact.title')}</h2>
+            <p className="text-xl text-orange-100 max-w-2xl mx-auto">
+              {t('home.impact.subtitle')}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
+              <div className="text-lg font-semibold text-orange-100">{t('home.impact.projects')}</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">20+</div>
+              <div className="text-lg font-semibold text-orange-100">{t('home.impact.communities')}</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">100+</div>
+              <div className="text-lg font-semibold text-orange-100">{t('home.impact.volunteers')}</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold mb-2">5000+</div>
+              <div className="text-lg font-semibold text-orange-100">{t('home.impact.beneficiaries')}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Spacer Section */}
+      <div className="h-16 bg-white dark:bg-gray-900"></div>
+      */
+
       {/* CTA Section */}
-      <section className="relative py-24 bg-gradient-to-r from-secondary-400 to-secondary-600 text-white">
+      <section id="contact" className="relative py-24 bg-gradient-to-r from-secondary-400 to-secondary-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('home.callToAction.title')}</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             {t('home.callToAction.description')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/donate">
+            <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg" className="!bg-white !text-black !border-white hover:!bg-orange-500 hover:!text-white">
                 {t('home.cta.donate')}
               </Button>
-            </Link>
-            <Link to="/contact">
+            </a>
+            <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg" className="!bg-white !text-black !border-white hover:!bg-orange-500 hover:!text-white">
                 {t('home.cta.joinUs')}
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -11,6 +11,7 @@ const DonatePage: React.FC = () => {
     bankName: t('donate.bankTransfer.bankNameValue'),
     accountHolder: "Association Forsa",
     rib: "001 810 0000123456789012 34",
+    iban: "MA64 001 810 0000123456789012 34",
     swift: "BMCEMAMC"
   };
 
@@ -88,6 +89,26 @@ const DonatePage: React.FC = () => {
                   </div>
                 </div>
                 
+                <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                  <div className="flex justify-between items-center">
+                    <div className="flex-1">
+                      <p className="text-sm text-gray-500 dark:text-gray-400">{t('donate.bankTransfer.ibanLabel')}</p>
+                      <p className="text-lg font-mono font-semibold text-gray-800 dark:text-white">{bankDetails.iban}</p>
+                    </div>
+                    <button
+                      onClick={() => copyToClipboard(bankDetails.iban, 'iban')}
+                      className="ml-3 p-2 text-primary-500 hover:bg-primary-50 dark:hover:bg-primary-900 rounded-md transition-colors"
+                      title={t('donate.bankTransfer.copyIban')}
+                    >
+                      {copiedField === 'iban' ? (
+                        <CheckCircle size={20} className="text-green-500" />
+                      ) : (
+                        <Copy size={20} />
+                      )}
+                    </button>
+                  </div>
+                </div>
+                
                 
               </div>
               
@@ -126,13 +147,15 @@ const DonatePage: React.FC = () => {
             <p className="text-xl mb-8">
               {t('donate.callToAction.description')}
             </p>
-            <Button  
-              variant="outline"  
-              size="lg"  
-              className="!bg-white !text-black !border-white hover:!bg-orange-500 hover:!text-white"
-            > 
-              {t('donate.callToAction.button')}
-            </Button>
+            <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
+              <Button  
+                variant="outline"  
+                size="lg"  
+                className="!bg-white !text-black !border-white hover:!bg-orange-500 hover:!text-white"
+              > 
+                {t('donate.callToAction.button')}
+              </Button>
+            </a>
 
           </div>
         </div>

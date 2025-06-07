@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center">
                   <img src="/forsa.png" alt="Forsa Logo" className="h-8 w-auto" />
-                  <span className="ml-2 text-xl font-bold text-white">
+                  <span className="ml-2 text-xl font-bold text-gray-900 dark:text-white">
                     Forsa
                   </span>
                 </Link>
@@ -69,19 +69,19 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="text-primary-500 mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">Trougout Driouch, Morocco</span>
+                <span className="text-gray-300">{t('contact.info.addressValue')}</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-primary-500 mr-2 flex-shrink-0" />
-                <span className="text-gray-300">+212 522 123 456</span>
+                <span className="text-gray-300">{t('contact.info.phoneValue')}</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="text-primary-500 mr-2 flex-shrink-0" />
-                <span className="text-gray-300">contact@forsa-association.org</span>
+                <span className="text-gray-300">{t('contact.info.emailValue')}</span>
               </li>
               <li className="flex items-center">
                 <Clock size={18} className="text-primary-500 mr-2 flex-shrink-0" />
-                <span className="text-gray-300">Mon-Fri: 9AM-5PM</span>
+                <span className="text-gray-300">{t('contact.info.hoursShort')}</span>
               </li>
             </ul>
           </div>

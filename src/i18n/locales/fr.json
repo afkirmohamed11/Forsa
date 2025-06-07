@@ -8,7 +8,7 @@
   },
   "home": {
     "slogan": "Des Opportunités pour Tous",
-    "description": "Forsa est une association marocaine à but non lucratif dédiée à la création d'opportunités pour les communautés défavorisées par l'éducation, le développement des compétences et l'engagement communautaire.",
+    "description": "Forsa est une association marocaine dynamique basée à Trougout, dans la province de Driouch, œuvrant pour l’éducation, l’intégration sociale et l’autonomisation des jeunes à travers des activités culturelles, éducatives et sportives. Elle s’adresse à toutes les catégories de la population locale, favorisant la solidarité, l’apprentissage continu et la citoyenneté active.",
     "cta": {
       "learnMore": "En savoir plus",
       "donate": "Faire un don",
@@ -16,14 +16,15 @@
     },
     "mission": {
       "title": "Notre Mission",
-      "description": "Nous croyons que chacun mérite des opportunités égales pour s'épanouir. Notre mission est de combler les lacunes dans l'accès à l'éducation, aux soins de santé et aux opportunités économiques."
+      "description": "Soutenir l’éducation, la culture et le développement social à Trougout à travers des programmes inclusifs qui renforcent les jeunes et la cohésion communautaire."
     },
     "vision": {
       "title": "Notre Vision",
-      "description": "Un Maroc où chaque individu dispose des ressources et du soutien nécessaires pour réaliser son plein potentiel et contribuer à la société."
+      "description": "Une communauté où chacun peut apprendre, évoluer et contribuer activement à un avenir meilleur."
     },
     "impact": {
       "title": "Notre Impact",
+      "subtitle": "Ensemble, nous faisons une réelle différence dans les communautés de la région",
       "projects": "Projets Réalisés",
       "communities": "Communautés Servies",
       "volunteers": "Bénévoles Actifs",
@@ -49,7 +50,7 @@
     "noActivities": "Aucune activité trouvée dans cette catégorie.",
     "getInvolved": {
       "title": "Participez",
-      "description": "Vous souhaitez participer à nos activités ou en organiser une dans votre communauté?",
+      "description": "Vous souhaitez participer à nos activités ou en organiser une dans laF communauté?",
       "volunteerBtn": "Faire du Bénévolat",
       "suggestBtn": "Suggérer une Activité"
     },
@@ -60,6 +61,7 @@
     "tags": "Étiquettes",
     "share": "Partager",
     "shareWhatsApp": "Partager sur WhatsApp",
+    "seeOnFacebook": "Voir sur Facebook",
     "gallery": "Galerie",
     "tagLabels": {
       "youth": "Jeunesse",
@@ -69,22 +71,10 @@
       "academic": "Académique"
     },
     "sampleActivities": {
-      "schoolSupplies": {
-        "title": "Distribution de Fournitures Scolaires",
-        "description": "Fournir des fournitures scolaires essentielles aux enfants défavorisés pour soutenir leur parcours éducatif."
-      },
-      "healthWorkshop": {
-        "title": "Atelier de Santé Communautaire",
-        "description": "Éduquer les communautés sur les mesures de santé préventive et les pratiques de vie saine."
-      },
-      "treePlanting": {
-        "title": "Initiative de Plantation d'Arbres",
-        "description": "Lutter contre le changement climatique en plantant des arbres et en promouvant la sensibilisation environnementale."
-      },
       "guidanceSessions": {
-        "title": "Sessions d'Orientation Académique et Professionnelle",
+        "title": "Session d'Orientation Académique et Professionnelle",
         "description": "Organiser des sessions d'orientation pour aider les lycéens à faire des choix académiques et professionnels éclairés.",
-        "detailedDescription": "L'Association Forsa pour le Développement Socio-Éducatif et Sportif à Trougout inaugure ses activités avec un séminaire d'orientation au profit des élèves du Lycée Qualifiant de Trougout intitulé {Les Diplômés de Trougout Reviennent Porteurs de Leurs Expériences pour que la Prochaine Génération les Investisse}.\n\nDans le contexte de l'émergence de l'Association Forsa comme nouvel acteur associatif dans la région de Trougout et ses environs, l'association a inauguré ses activités le 20/05/2025 avec un séminaire d'orientation sous le slogan 'De Trougout vers l'Avenir' en partenariat avec l'administration du Lycée Qualifiant de Trougout.\n\nLe programme du séminaire comprenait :\n> Accueil des élèves.\n> Discours du Président de l'Association.\n> Discours du Directeur de l'Établissement.\n> Discours du Coordinateur de la Vie Scolaire.\n> Présentation des invités.\n> Interventions des invités :\n\n• **Mohamed Afkir** - École Nationale des Sciences Appliquées d'Al Hoceima/Ingénierie des Données.\n\n• **Abubakar Bourbain** - Faculté Pluridisciplinaire de Nador/Département de Droit Public.\n\n• **Mohamed Baouch** - Faculté des Sciences et Techniques d'Al Hoceima, Doctorat en Chimie Environnementale et Traitement de l'Eau.\n\n• **Professeur Moussa Afrmas** - Spécialité Sociologie et perspectives de la Philosophie après le Baccalauréat.\n\n> Atelier de concours culturel.\n> Atelier de motivation et gestion du stress.\n> Atelier 'Partagez votre expérience du Baccalauréat' avec la participation des enseignants de l'établissement.\n> Discours de clôture du Président de l'Association **Jamal Baqdour**.\n\nCe programme s'est déroulé dans une atmosphère éducative distinctive et un esprit interactif élevé tant de la part des animateurs que des participants, enseignants et élèves, ce qui a dynamisé le bureau exécutif de l'association et son leadership pour avancer avec plus de force et d'activité dans les jours à venir, visant à élever le travail associatif et la présence civique dans la région pour en faire un modèle exemplaire et un phare à suivre.",
+        "detailedDescription": "L'Association Forsa pour le développement socio-éducatif et sportif à Trougout a lancé ses activités par un séminaire d’orientation destiné aux élèves du Lycée Qualifiant de Trougout, intitulé 'Les diplômés de Trougout reviennent partager leurs expériences avec la nouvelle génération'. En tant que nouvel acteur de la société civile dans la région de Trougout, l’association a organisé son événement inaugural le 20/05/2025 sous le slogan 'De Trougout vers l’avenir', en partenariat avec l’administration du lycée. Le programme comprenait l’accueil des élèves, les discours du président de l’association, du directeur de l’établissement et du coordinateur de la vie scolaire, la présentation des invités, et des interventions de : Mohamed Afkir – École Nationale des Sciences Appliquées d'Al Hoceima / Ingénierie des données, Abubakar Bourbain – Faculté pluridisciplinaire de Nador / Droit public, Mohamed Baouch – Faculté des Sciences et Techniques d'Al Hoceima / Doctorat en chimie environnementale et traitement de l'eau, et le professeur Moussa Afrmas – perspectives en sociologie et philosophie après le baccalauréat. Des ateliers ont suivi : concours culturel, gestion du stress et de la motivation, et partage d'expérience du baccalauréat avec des enseignants du lycée, avant de conclure par un mot du président Jamal Baqdour. L’événement s’est déroulé dans une ambiance éducative dynamique et participative, motivant les membres de l’association à poursuivre leur mission avec engagement pour renforcer l’implication citoyenne et l’autonomisation des jeunes dans la région.",
         "date": "20 Mai 2025",
         "location": "Trougout"
       }
@@ -98,12 +88,14 @@
       "title": "Détails du Virement Bancaire",
       "description": "Vous pouvez soutenir notre mission en effectuant un virement bancaire direct en utilisant les détails ci-dessous. Rendez-vous simplement dans votre agence bancaire ou utilisez la banque en ligne pour envoyer votre don.",
       "bankName": "Nom de la Banque",
-      "bankNameValue": "Banque Populaire",
+      "bankNameValue": "Barid Bank",
       "accountHolder": "Titulaire du Compte",
       "ribLabel": "RIB (Numéro de Compte)",
+      "ibanLabel": "IBAN",
       "copyRib": "Copier le RIB",
+      "copyIban": "Copier l'IBAN",
       "importantNote": "Note Importante:",
-      "noteText": "Veuillez inclure \"Don - Votre Nom\" dans la référence du virement pour nous aider à suivre votre contribution. Vous pouvez également nous envoyer un email à contact@forsa-association.org pour nous notifier de votre don."
+      "noteText": "Veuillez inclure \"Don - Votre Nom\" dans la référence du virement pour nous aider à suivre votre contribution. Vous pouvez également nous envoyer un email à contact@forsa-association.org ou un message WhatsApp au +212 675 900 514 pour nous notifier de votre don."
     },
     "form": {
       "amount": "Montant du Don",
@@ -181,10 +173,11 @@
       "phone": "Téléphone",
       "email": "Email",
       "hours": "Heures d'Ouverture",
-      "addressValue": "Trougout Driouch, Morocco",
-      "phoneValue": "+212 522 123 456",
+      "addressValue": "Trougout Driouch, Maroc",
+      "phoneValue": "+212 675 900 514",
       "emailValue": "contact@forsa-association.org",
-      "hoursValue": "Lundi - Vendredi: 9h - 17h"
+      "hoursValue": "Lundi - Vendredi: 9h - 17h",
+      "hoursShort": "Lun-Ven: 9h-17h"
     },
     "location": "Localisation",
     "social": {
