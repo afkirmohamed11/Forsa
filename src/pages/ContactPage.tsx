@@ -315,7 +315,7 @@ const ContactPage: React.FC = () => {
                 {t('contact.social.title')}
               </h2>
               
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <a 
                   href="https://wa.me/212675900514" 
                   target="_blank" 

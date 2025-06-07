@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Calendar } from 'lucide-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -87,7 +87,95 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-     
+      {/* Latest News Section */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('news.title')}</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              {t('news.subtitle')}
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Featured News Article */}
+            <Card hover className="h-full">
+              <CardMedia 
+                src="/news/news1/img1.jpg"
+                alt="Academic and Career Guidance Success"
+              />
+              <CardContent>
+                <div className="mb-2">
+                  <span className="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
+                    {t('news.filters.education')}
+                  </span>
+                  <span className="ml-2 inline-block px-3 py-1 text-xs font-medium rounded-full bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200">
+                    {t('news.featured')}
+                  </span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                  {t('news.articles.guidanceSuccess.title')}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  {t('news.articles.guidanceSuccess.summary')}
+                </p>
+                <div className="flex items-center text-gray-500 dark:text-gray-400 mb-2">
+                  <Calendar size={16} className="mr-2" />
+                  <span>{t('news.articles.guidanceSuccess.date')}</span>
+                </div>
+                <Link to="/news/1" className="inline-flex items-center text-primary-500 hover:text-primary-600 font-medium">
+                  <span className="mr-2">{t('news.readMore')}</span>
+                  <ArrowRight size={16} />
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Second News Article */}
+            <Card hover className="h-full">
+              <CardMedia 
+                src="/news/news2/img.webp"
+                alt="Upcoming Academic Guidance Session"
+              />
+              <CardContent>
+                <div className="mb-2">
+                  <span className="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-full">
+                    {t('news.filters.education')}
+                  </span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+                  {t('news.articles.upcomingGuidance.title')}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  {t('news.articles.upcomingGuidance.summary')}
+                </p>
+                <div className="flex items-center text-gray-500 dark:text-gray-400 mb-2">
+                  <Calendar size={16} className="mr-2" />
+                  <span>{t('news.articles.upcomingGuidance.date')}</span>
+                </div>
+                <Link to="/news/2" className="inline-flex items-center text-primary-500 hover:text-primary-600 font-medium">
+                  <span className="mr-2">{t('news.readMore')}</span>
+                  <ArrowRight size={16} />
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Call-to-action Card */}
+            <Card className="h-full bg-gradient-to-br from-accent-500 to-accent-600 text-white">
+              <CardContent className="h-full flex flex-col justify-center items-center text-center p-8">
+                <h3 className="text-2xl font-bold mb-4">{t('news.newsletter.title')}</h3>
+                <p className="text-accent-100 mb-6">
+                  {t('news.newsletter.description')}
+                </p>
+                <Link to="/news">
+                  <Button variant="outline" size="lg" className="!bg-white !text-accent-600 !border-white hover:!bg-accent-50">
+                    {t('news.viewAll')}
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
       {/* Recent Activities Section */}
       <section id="activities" className="py-20 bg-gray-50 dark:bg-gray-900">
