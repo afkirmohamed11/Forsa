@@ -24,12 +24,12 @@ const ActivityPage: React.FC = () => {
           facebookUrl: 'https://www.facebook.com/share/p/1DneHGCzpB/',
           tags: [t('activities.filters.education'), t('activities.tagLabels.youth'), t('activities.tagLabels.communitySupport')],
           gallery: [
-            '/activity1_1.jpg',
-            '/activity1_2.jpg',
-            '/activity1_3.jpg',
-            '/activity1_4.jpg',
-            '/activity1_5.jpg',
-            '/activity1_6.jpg'
+            '/activities/activity1/activity1_1.jpg',
+            '/activities/activity1/activity1_2.jpg',
+            '/activities/activity1/activity1_3.jpg',
+            '/activities/activity1/activity1_4.jpg',
+            '/activities/activity1/activity1_5.jpg',
+            '/activities/activity1/activity1_6.jpg'
           ],
           impact: {
             beneficiaries: 60,

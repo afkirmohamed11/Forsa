@@ -18,15 +18,15 @@ const ActivitiesPage: React.FC = () => {
       date: t('activities.sampleActivities.guidanceSessions.date'),
       location: t('activities.sampleActivities.guidanceSessions.location'),
       category: 'education',
-      image: '/activity1_1.jpg',
+      image: '/activities/activity1/activity1_1.jpg',
       facebookUrl: 'https://www.facebook.com/share/p/1DneHGCzpB/',
       images: [
-        '/activity1_1.jpg',
-        '/activity1_2.jpg',
-        '/activity1_3.jpg',
-        '/activity1_4.jpg',
-        '/activity1_5.jpg',
-        '/activity1_6.jpg'
+        '/activities/activity1/activity1_1.jpg',
+        '/activities/activity1/activity1_2.jpg',
+        '/activities/activity1/activity1_3.jpg',
+        '/activities/activity1/activity1_4.jpg',
+        '/activities/activity1/activity1_5.jpg',
+        '/activities/activity1/activity1_6.jpg'
       ]
     }
   ];

@@ -103,7 +103,7 @@ const HomePage: React.FC = () => {
             {/* Single activity card - matching the one in ActivitiesPage */}
             <Card hover className="h-full">
               <CardMedia 
-                src="/activity1_1.jpg"
+                src="/activities/activity1/activity1_1.jpg"
                 alt="Academic and Career Guidance Sessions"
               />
               <CardContent>
