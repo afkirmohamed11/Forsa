@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -7,7 +8,58 @@ import Card, { CardContent, CardMedia } from '../components/ui/Card';
 
 const NewsPage: React.FC = () => {
   const { t } = useTranslation();
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('all');  const [email, setEmail] = useState('');
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setIsLoading(true);
+    setError('');
+
+    try {
+      // EmailJS configuration
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const welcomeTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_WELCOME;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      // Check if environment variables are set
+      if (!serviceId || !welcomeTemplateId || !publicKey) {
+        throw new Error('EmailJS configuration missing');
+      }
+
+      const subscriptionDate = new Date().toLocaleString('ar-MA', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+
+      // Template parameters for welcome email
+      const templateParams = {
+        subscriber_email: email,
+        subscription_date: subscriptionDate
+      };
+
+      // Send welcome email to subscriber
+      await emailjs.send(serviceId, welcomeTemplateId, templateParams, publicKey);
+
+      // Success
+      setIsSubscribed(true);
+      setEmail('');
+      setTimeout(() => setIsSubscribed(false), 5000);
+    } catch (err) {
+      console.error('Subscription error:', err);
+      setError(t('footer.subscribe.error'));
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const newsArticles = [
     {
       id: 1,
@@ -135,9 +187,7 @@ const NewsPage: React.FC = () => {
             <p className="text-xl text-gray-600 dark:text-gray-300">{t('news.noNews')}</p>
           </div>
         )}
-      </div>
-
-      {/* Newsletter CTA Section */}
+      </div>      {/* Newsletter CTA Section */}
       <div className="bg-primary-500 text-white py-16 mt-16">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
@@ -146,19 +196,34 @@ const NewsPage: React.FC = () => {
               {t('news.newsletter.description')}
             </p>
             <div className="max-w-md mx-auto">
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder={t('news.newsletter.placeholder')}
-                  className="flex-1 px-4 py-3 rounded-l text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/20"
-                />
-                <Button 
-                  variant="secondary" 
-                  className="!bg-white !text-primary-500 hover:!bg-gray-100 rounded-l-none"
-                >
-                  {t('news.newsletter.subscribe')}
-                </Button>
-              </div>
+              {isSubscribed ? (
+                <p className="text-green-100 text-lg">{t('footer.subscribe.success')}</p>
+              ) : (
+                <form onSubmit={handleSubscribe} className="space-y-4">
+                  <div className="flex gap-1">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder={t('news.newsletter.placeholder')}
+                      className="flex-1 px-4 py-3 rounded-l border-r border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/20"
+                      required
+                      disabled={isLoading}
+                    />
+                    <Button 
+                      type="submit"
+                      variant="secondary" 
+                      disabled={isLoading}
+                      className="!bg-white !text-primary-500 hover:!bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 ease-in-out hover:shadow-lg active:shadow-md rounded-l-none border-l border-gray-200 disabled:!bg-gray-200 disabled:!text-gray-400 disabled:cursor-not-allowed disabled:hover:scale-100"
+                    >
+                      {isLoading ? '...' : t('news.newsletter.subscribe')}
+                    </Button>
+                  </div>
+                  {error && (
+                    <p className="text-red-200 text-sm mt-2">{error}</p>
+                  )}
+                </form>
+              )}
             </div>
           </div>
         </div>
