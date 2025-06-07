@@ -2,6 +2,7 @@
   "nav": {
     "home": "Accueil",
     "activities": "Activités",
+    "news": "Actualités",
     "donate": "Faire un don",
     "collaborations": "Collaborations",
     "contact": "Contact"
@@ -74,7 +75,7 @@
       "guidanceSessions": {
         "title": "Session d'Orientation Académique et Professionnelle",
         "description": "Organiser des sessions d'orientation pour aider les lycéens à faire des choix académiques et professionnels éclairés.",
-        "detailedDescription": "L'Association Forsa pour le développement socio-éducatif et sportif à Trougout a lancé ses activités par un séminaire d’orientation destiné aux élèves du Lycée Qualifiant de Trougout, intitulé 'Les diplômés de Trougout reviennent partager leurs expériences avec la nouvelle génération'. En tant que nouvel acteur de la société civile dans la région de Trougout, l’association a organisé son événement inaugural le 20/05/2025 sous le slogan 'De Trougout vers l’avenir', en partenariat avec l’administration du lycée. Le programme comprenait l’accueil des élèves, les discours du président de l’association, du directeur de l’établissement et du coordinateur de la vie scolaire, la présentation des invités, et des interventions de : Mohamed Afkir – École Nationale des Sciences Appliquées d'Al Hoceima / Ingénierie des données, Abubakar Bourbain – Faculté pluridisciplinaire de Nador / Droit public, Mohamed Baouch – Faculté des Sciences et Techniques d'Al Hoceima / Doctorat en chimie environnementale et traitement de l'eau, et le professeur Moussa Afrmas – perspectives en sociologie et philosophie après le baccalauréat. Des ateliers ont suivi : concours culturel, gestion du stress et de la motivation, et partage d'expérience du baccalauréat avec des enseignants du lycée, avant de conclure par un mot du président Jamal Baqdour. L’événement s’est déroulé dans une ambiance éducative dynamique et participative, motivant les membres de l’association à poursuivre leur mission avec engagement pour renforcer l’implication citoyenne et l’autonomisation des jeunes dans la région.",
+        "detailedDescription": "L'Association Forsa pour le Développement Socio-Éducatif et Sportif à Trougout a marqué une étape significative avec le lancement réussi de son séminaire d'orientation inaugural pour les élèves du Lycée Qualifiant de Trougout.\n\nOrganisé le 20 mai 2025, sous le thème inspirant 'De Trougout vers l'Avenir', cet événement a rassemblé des anciens élèves locaux qui ont poursuivi diverses voies académiques et professionnelles pour partager leurs expériences avec la prochaine génération.\n\nLe séminaire, intitulé 'Les Diplômés de Trougout Reviennent Porteurs de Leurs Expériences pour la Prochaine Génération à Investir', représentait plus qu'une simple session éducative—il était une démonstration puissante de solidarité communautaire et d'engagement envers l'autonomisation des jeunes.\n\nLes invités distingués comprenaient :\n• Mohamed Afkir de l'École Nationale des Sciences Appliquées d'Al Hoceima, spécialisé en Ingénierie des Données\n• Abubakar Bourbain de la Faculté Pluridisciplinaire de Nador, Département de Droit Public\n• Mohamed Baouch de la Faculté des Sciences et Technologies d'Al Hoceima, Doctorat en Chimie Environnementale et Traitement de l'Eau\n• Professeur Moussa Afarmas, offrant des perspectives en Sociologie et Philosophie post-Baccalauréat\n\nLe programme complet comportait des ateliers interactifs incluant des concours culturels, des sessions de motivation et de gestion du stress, et des ateliers 'Partagez votre expérience du Baccalauréat' avec les enseignants de l'école.\n\nL'événement a créé une atmosphère éducative dynamique avec une forte interaction entre les participants—étudiants, enseignants et facilitateurs—inspirant la direction de l'association à poursuivre sa mission avec une énergie renouvelée. Ce succès a renforcé l'engagement de l'organisation envers l'engagement civique et l'autonomisation des jeunes dans la région de Trougout.\n\nAvec environ 60 étudiants bénéficiaires et la collaboration de 3 bénévoles dévoués, cette initiative a posé des bases solides pour les futurs programmes éducatifs et activités de développement communautaire.",
         "date": "20 Mai 2025",
         "location": "Trougout"
       }
@@ -204,5 +205,58 @@
       "error": "Une erreur s'est produite lors de l'envoi de votre abonnement. Veuillez réessayer."
     },
     "copyright": "© 2025 Association Forsa. Tous droits réservés."
+  },
+  "news": {
+    "title": "Dernières Actualités",
+    "subtitle": "Restez informé de nos dernières activités et réalisations",
+    "readMore": "Lire Plus",
+    "backToNews": "Retour aux Actualités",
+    "noNews": "Aucun article d'actualité trouvé.",
+    "featured": "À la Une",
+    "shareText": "Découvrez cette actualité de l'Association Forsa:",
+    "shareWhatsApp": "Partager sur WhatsApp",
+    "share": "Partager",
+    "gallery": "Galerie",
+    "articleNotFound": "L'article d'actualité que vous recherchez n'existe pas.",
+    "relatedActivity": "Activité Liée",
+    "relatedActivityDescription": "Cet article d'actualité est lié à l'activité suivante:",
+    "viewActivity": "Voir l'Activité",
+    "filters": {
+      "all": "Toutes les Actualités",
+      "education": "Éducation",
+      "activities": "Activités",
+      "partnerships": "Partenariats"
+    },
+    "newsletter": {
+      "title": "Restez Informé",
+      "description": "Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles et mises à jour directement dans votre boîte mail.",
+      "placeholder": "Entrez votre email",
+      "subscribe": "S'abonner"
+    },
+    "tags": {
+      "title": "Étiquettes",
+      "education": "Éducation",
+      "youth": "Jeunesse",
+      "guidance": "Orientation",
+      "community": "Communauté",
+      "partnership": "Partenariat",
+      "success": "Succès"
+    },
+    "articles": {
+      "upcomingGuidance": {
+        "title": "L'Association Forsa Annonce une Prochaine Séance d'Orientation Académique pour les Élèves du Lycée de Trougout",
+        "summary": "L'Association Forsa se prépare à lancer sa première initiative éducative majeure avec une séance d'orientation académique et professionnelle pour les élèves du lycée de Trougout, mettant en vedette des anciens élèves locaux partageant leurs expériences.",
+        "content": "L'Association Forsa pour le Développement Socio-Éducatif et Sportif est ravie d'annoncer sa prochaine séance d'orientation académique pour les étudiants du Lycée Qualifiant de Trougout.\n\nPrévue pour le 20 mai 2025, cet événement inaugural se déroulera sous le thème inspirant 'De Trougout vers l'Avenir' et représente une étape importante pour l'association nouvellement établie.\n\nLa séance, intitulée 'Les Diplômés de Trougout Reviennent Porteurs de Leurs Expériences pour la Prochaine Génération à Investir', rassemblera des anciens élèves locaux distingués qui ont poursuivi diverses voies académiques et professionnelles pour partager leurs précieuses expériences avec les étudiants actuels.\n\nLes intervenants confirmés incluent:\n• Mohamed Afkir de l'École Nationale des Sciences Appliquées d'Al Hoceima, spécialisé en Ingénierie des Données\n• Abubakar Bourbain de la Faculté Multidisciplinaire de Nador, Département de Droit Public\n• Mohamed Baouch de la Faculté des Sciences et Technologies d'Al Hoceima, Doctorat en Chimie Environnementale et Traitement de l'Eau\n• Professeur Moussa Afarmas, qui offrira des perspectives sur les opportunités en Sociologie et Philosophie post-Baccalauréat\n\nLe programme complet comprendra des ateliers interactifs incluant des compétitions culturelles, des sessions de motivation et de gestion du stress, et des ateliers 'Partagez votre expérience du Baccalauréat' animés par les enseignants de l'école.\n\nCette initiative reflète l'engagement de l'Association Forsa à soutenir l'éducation et l'autonomisation des jeunes dans la région de Trougout. L'association vise à créer un pont entre les anciens diplômés et les étudiants actuels, favorisant la solidarité communautaire et inspirant la prochaine génération à poursuivre leurs objectifs académiques et professionnels.\n\nL'événement est organisé en partenariat avec l'administration du Lycée Qualifiant de Trougout et devrait bénéficier à environ 60 étudiants avec le soutien de bénévoles dévoués.",
+        "date": "15 mai 2025",
+        "readTime": "4 min de lecture"
+      },
+      "guidanceSuccess": {
+        "title": "Lancement Réussi : Séance d'Orientation Académique et Professionnelle Autonomise les Étudiants Locaux",
+        "summary": "L'Association Forsa a lancé avec succès sa première initiative majeure avec un séminaire d'orientation complet pour les élèves du lycée de Trougout, mettant en vedette des anciens partageant leurs expériences académiques et professionnelles.",
+        "content": "L'Association Forsa pour le Développement Socio-Éducatif et Sportif a marqué une étape importante avec le lancement réussi de son séminaire d'orientation inaugural pour les étudiants du Lycée Qualifiant de Trougout.\n\nTenu le 20 mai 2025, sous le thème inspirant 'De Trougout vers l'Avenir', cet événement a rassemblé des anciens élèves locaux qui ont poursuivi diverses voies académiques et professionnelles pour partager leurs expériences avec la prochaine génération.\n\nLe séminaire, intitulé 'Les Diplômés de Trougout Reviennent Porteurs de Leurs Expériences pour la Prochaine Génération à Investir', représentait plus qu'une simple session éducative—c'était une démonstration puissante de solidarité communautaire et d'engagement envers l'autonomisation des jeunes.\n\nLes invités distingués comprenaient:\n• Mohamed Afkir de l'École Nationale des Sciences Appliquées d'Al Hoceima, spécialisé en Ingénierie des Données\n• Abubakar Bourbain de la Faculté Multidisciplinaire de Nador, Département de Droit Public\n• Mohamed Baouch de la Faculté des Sciences et Technologies d'Al Hoceima, Doctorat en Chimie Environnementale et Traitement de l'Eau\n• Professeur Moussa Afarmas, offrant des perspectives en Sociologie et Philosophie post-Baccalauréat\n\nLe programme complet a présenté des ateliers interactifs incluant des compétitions culturelles, des sessions de motivation et de gestion du stress, et des ateliers 'Partagez votre expérience du Baccalauréat' avec les enseignants de l'école.\n\nL'événement a créé une atmosphère éducative vibrante avec une forte interaction entre les participants—étudiants, enseignants et facilitateurs—inspirant la direction de l'association à continuer leur mission avec une énergie renouvelée. Ce succès a renforcé l'engagement de l'organisation envers l'engagement civique et l'autonomisation des jeunes dans la région de Trougout.\n\nAvec environ 60 étudiants bénéficiaires et la collaboration de 3 bénévoles dévoués, cette initiative a posé une base solide pour les futurs programmes éducatifs et activités de développement communautaire.",
+        "date": "25 mai 2025",
+        "readTime": "5 min de lecture"
+      }
+    }
   }
 }

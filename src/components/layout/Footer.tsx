@@ -97,6 +97,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-300 hover:text-primary-500 transition-colors">{t('nav.home')}</Link></li>
               <li><Link to="/activities" className="text-gray-300 hover:text-primary-500 transition-colors">{t('nav.activities')}</Link></li>
+              <li><Link to="/news" className="text-gray-300 hover:text-primary-500 transition-colors">{t('nav.news')}</Link></li>
               <li><Link to="/donate" className="text-gray-300 hover:text-primary-500 transition-colors">{t('nav.donate')}</Link></li>
               <li><Link to="/collaborations" className="text-gray-300 hover:text-primary-500 transition-colors">{t('nav.collaborations')}</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-primary-500 transition-colors">{t('nav.contact')}</Link></li>

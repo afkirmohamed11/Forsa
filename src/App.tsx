@@ -13,6 +13,8 @@ import CollaborationsPage from './pages/CollaborationsPage';
 import ContactPage from './pages/ContactPage';
 import DonatePage from './pages/DonatePage';
 import HomePage from './pages/HomePage';
+import NewsArticlePage from './pages/NewsArticlePage';
+import NewsPage from './pages/NewsPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 // Context
@@ -57,6 +59,8 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="activities" element={<ActivitiesPage />} />
             <Route path="activities/:id" element={<ActivityPage />} />
+            <Route path="news" element={<NewsPage />} />
+            <Route path="news/:id" element={<NewsArticlePage />} />
             <Route path="donate" element={<DonatePage />} />
             <Route path="collaborations" element={<CollaborationsPage />} />
             <Route path="contact" element={<ContactPage />} />

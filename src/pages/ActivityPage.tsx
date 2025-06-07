@@ -132,9 +132,9 @@ const ActivityPage: React.FC = () => {
 
             {/* Description */}
             <div className="prose dark:prose-invert max-w-none">
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+              <div className="text-lg text-gray-600 dark:text-gray-300 mb-8 whitespace-pre-line">
                 {activity.detailedDescription}
-              </p>
+              </div>
             </div>
 
             {/* Impact */}

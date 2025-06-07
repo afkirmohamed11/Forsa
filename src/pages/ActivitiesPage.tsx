@@ -182,25 +182,16 @@ const ActivitiesPage: React.FC = () => {
             {t('activities.getInvolved.description')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-                       <a
-            href="https://wa.me/212675900514"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="primary" size="lg">
-              {t('activities.getInvolved.volunteerBtn')}
-            </Button>
-          </a>
-          <a
-            href="https://wa.me/212675900514"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="outline" size="lg">
-              {t('activities.getInvolved.suggestBtn')}
-            </Button>
-          </a>
-
+            <Link to="/contact">
+              <Button variant="primary" size="lg">
+                {t('activities.getInvolved.volunteerBtn')}
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button variant="outline" size="lg">
+                {t('activities.getInvolved.suggestBtn')}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

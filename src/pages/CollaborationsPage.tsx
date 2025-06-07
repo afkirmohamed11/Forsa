@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import Button from '../components/ui/Button';
 
 const partners = [
@@ -57,16 +58,13 @@ const CollaborationsPage: React.FC = () => {
         </div>
         
         {/* CTA */}
-        <a
-        href="https://wa.me/212675900514"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
         <div className="text-center mb-24">
-          <Button variant="primary" size="lg">
-            {t('collaborations.becomePartner')}
-          </Button>
-        </div></a>
+          <Link to="/contact">
+            <Button variant="primary" size="lg">
+              {t('collaborations.becomePartner')}
+            </Button>
+          </Link>
+        </div>
         
         
 

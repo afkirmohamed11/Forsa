@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "activities": "Activities",
+    "news": "News",
     "donate": "Donate",
     "collaborations": "Collaborations",
     "contact": "Contact"
@@ -33,6 +34,59 @@
     "callToAction": {
       "title": "Ready to make a difference?",
       "description": "Join our community of changemakers and help us create more opportunities for those who need them most."
+    }
+  },
+  "news": {
+    "title": "Latest News",
+    "subtitle": "Stay updated with our latest activities and achievements",
+    "readMore": "Read More",
+    "backToNews": "Back to News",
+    "noNews": "No news articles found.",
+    "featured": "Featured",
+    "shareText": "Check out this news from Forsa Association:",
+    "shareWhatsApp": "Share on WhatsApp",
+    "share": "Share",
+    "gallery": "Gallery",
+    "articleNotFound": "The news article you're looking for doesn't exist.",
+    "relatedActivity": "Related Activity",
+    "relatedActivityDescription": "This news article is related to the following activity:",
+    "viewActivity": "View Activity",
+    "filters": {
+      "all": "All News",
+      "education": "Education",
+      "activities": "Activities",
+      "partnerships": "Partnerships"
+    },
+    "newsletter": {
+      "title": "Stay Informed",
+      "description": "Subscribe to our newsletter to receive the latest news and updates directly to your inbox.",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+    "tags": {
+      "title": "Tags",
+      "education": "Education",
+      "youth": "Youth",
+      "guidance": "Guidance",
+      "community": "Community",
+      "partnership": "Partnership",
+      "success": "Success"
+    },
+    "articles": {
+      "upcomingGuidance": {
+        "title": "Forsa Association Announces Upcoming Academic Guidance Session for Trougout High School Students",
+        "summary": "Forsa Association is preparing to launch its first major educational initiative with an academic and career guidance session for high school students in Trougout, featuring local alumni sharing their experiences.",
+        "content": "Forsa Association for Socio-Educational and Sports Development is excited to announce its upcoming academic guidance session for students at Trougout Qualifying High School.\n\nScheduled for May 20, 2025, this inaugural event will be held under the inspiring theme 'From Trougout to the Future' and represents a significant milestone for the newly established association.\n\nThe session, titled 'Trougout Graduates Return Carrying Their Experiences for the Next Generation to Invest,' will bring together distinguished local alumni who have pursued diverse academic and professional paths to share their valuable experiences with current students.\n\nConfirmed speakers include:\n• Mohamed Afkir from the National School of Applied Sciences in Al Hoceima, specializing in Data Engineering\n• Abubakar Bourbain from the Multidisciplinary Faculty in Nador, Department of Public Law\n• Mohamed Baouch from the Faculty of Sciences and Technologies in Al Hoceima, PhD in Environmental Chemistry and Water Treatment\n• Professor Moussa Afarmas, who will offer insights into Sociology and Philosophy post-Baccalaureate opportunities\n\nThe comprehensive program will feature interactive workshops including cultural competitions, motivation and stress management sessions, and 'Share your Baccalaureate experience' workshops facilitated by school teachers.\n\nThis initiative reflects Forsa Association's commitment to supporting education and youth empowerment in the Trougout region. The association aims to create a bridge between past graduates and current students, fostering community solidarity and inspiring the next generation to pursue their academic and professional goals.\n\nThe event is organized in partnership with the administration of Trougout Qualifying High School and expects to benefit approximately 60 students with the support of dedicated volunteers.",
+        "date": "May 15, 2025",
+        "readTime": "4 min read"
+      },
+      "guidanceSuccess": {
+        "title": "Successful Launch: Academic and Career Guidance Session Empowers Local Students",
+        "summary": "Forsa Association successfully launched its first major initiative with a comprehensive guidance seminar for high school students in Trougout, featuring alumni sharing their academic and career experiences.",
+        "content": "Forsa Association for Socio-Educational and Sports Development marked a significant milestone with the successful launch of its inaugural guidance seminar for students at Trougout Qualifying High School.\n\nHeld on May 20, 2025, under the inspiring theme 'From Trougout to the Future,' this event brought together local alumni who have pursued diverse academic and professional paths to share their experiences with the next generation.\n\nThe seminar, titled 'Trougout Graduates Return Carrying Their Experiences for the Next Generation to Invest,' represented more than just an educational session—it was a powerful demonstration of community solidarity and the commitment to youth empowerment.\n\nDistinguished guests included:\n• Mohamed Afkir from the National School of Applied Sciences in Al Hoceima, specializing in Data Engineering\n• Abubakar Bourbain from the Multidisciplinary Faculty in Nador, Department of Public Law\n• Mohamed Baouch from the Faculty of Sciences and Technologies in Al Hoceima, PhD in Environmental Chemistry and Water Treatment\n• Professor Moussa Afarmas, offering insights into Sociology and Philosophy post-Baccalaureate\n\nThe comprehensive program featured interactive workshops including cultural competitions, motivation and stress management sessions, and 'Share your Baccalaureate experience' workshops with school teachers.\n\nThe event created a vibrant educational atmosphere with strong interaction among participants—students, teachers, and facilitators—inspiring the association's leadership to continue their mission with renewed energy. This success has strengthened the organization's commitment to civic engagement and youth empowerment in the Trougout region.\n\nWith approximately 60 student beneficiaries and the collaboration of 3 dedicated volunteers, this initiative has set a strong foundation for future educational programs and community development activities.",
+        "date": "May 25, 2025",
+        "readTime": "5 min read"
+      }
     }
   },
   "activities": {
@@ -74,7 +128,7 @@
       "guidanceSessions": {
         "title": "Academic and Career Guidance Session",
         "description": "Organizing orientation sessions to help high school students make informed academic and career choices.",
-        "detailedDescription": "Forsa Association for Socio-Educational and Sports Development in Trougout launched its activities with a guidance seminar for students of Trougout Qualifying High School, titled 'Trougout Graduates Return Carrying Their Experiences for the Next Generation to Invest.' As a newly emerging civil society actor in the Trougout region, the association held its inaugural event on 20/05/2025 under the slogan 'From Trougout to the Future,' in partnership with the school's administration. The seminar program included student reception, speeches by the Association President, the School Principal, and the School Life Coordinator, introduction of guests, and guest presentations: Mohamed Afkir – National School of Applied Sciences in Al Hoceima / Data Engineering, Abubakar Bourbain – Multidisciplinary Faculty in Nador / Public Law Department, Mohamed Baouch – Faculty of Sciences and Technologies in Al Hoceima / PhD in Environmental Chemistry and Water Treatment, and Professor Moussa Afrmas – Insights into Sociology and Philosophy after the Baccalaureate. Additional activities included a cultural competition workshop, a motivation and stress management session, a 'Share your Baccalaureate experience' workshop with school teachers, and closing remarks by Association President Jamal Baqdour. The seminar created a vibrant educational atmosphere and strong interaction among participants — students, teachers, and facilitators — inspiring the association's leadership to continue its mission with renewed energy, aiming to strengthen civic engagement and youth empowerment in the region.",
+        "detailedDescription": "Forsa Association for Socio-Educational and Sports Development marked a significant milestone by launching its inaugural guidance seminar for students at Trougout Qualifying High School.\n\nHeld on May 20, 2025, under the inspiring theme 'From Trougout to the Future,' this groundbreaking event brought together distinguished alumni to share their academic and professional journeys with the next generation.\n\nThe seminar, titled 'Trougout Graduates Return Carrying Their Experiences for the Next Generation to Invest,' represented more than just an educational session—it was a powerful demonstration of community solidarity and commitment to youth empowerment.\n\nThe comprehensive program featured:\n• Welcome reception and official opening ceremonies\n• Inspiring speeches from Association President, School Principal, and School Life Coordinator\n• Distinguished guest presentations and interactive discussions\n\nEsteemed speakers included:\n• Mohamed Afkir from the National School of Applied Sciences in Al Hoceima, specializing in Data Engineering\n• Abubakar Bourbain from the Multidisciplinary Faculty in Nador, Department of Public Law\n• Mohamed Baouch from the Faculty of Sciences and Technologies in Al Hoceima, PhD in Environmental Chemistry and Water Treatment\n• Professor Moussa Afarmas, offering valuable insights into Sociology and Philosophy post-Baccalaureate opportunities\n\nEnhancing the educational experience, interactive workshops included:\n• Cultural competitions promoting intellectual engagement\n• Motivation and stress management sessions for academic success\n• 'Share your Baccalaureate experience' workshops featuring valuable contributions from school teachers\n\nThe event fostered a vibrant educational atmosphere with meaningful interaction among participants—students, teachers, and facilitators. This success has inspired the association's leadership to continue their mission with renewed energy and commitment.\n\nThis initiative represents a promising foundation for the association's ongoing efforts to strengthen civic engagement and youth empowerment throughout the Trougout region.",
         "date": "May 20, 2025",
         "location": "Trougout"
       }

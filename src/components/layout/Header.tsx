@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
-import Logo from '../ui/Logo';
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -49,6 +48,7 @@ const Header: React.FC = () => {
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/activities', label: t('nav.activities') },
+    { to: '/news', label: t('nav.news') },
     { to: '/donate', label: t('nav.donate') },
     { to: '/collaborations', label: t('nav.collaborations') },
     { to: '/contact', label: t('nav.contact') },
