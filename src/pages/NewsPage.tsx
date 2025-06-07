@@ -198,15 +198,14 @@ const NewsPage: React.FC = () => {
             <div className="max-w-md mx-auto">
               {isSubscribed ? (
                 <p className="text-green-100 text-lg">{t('footer.subscribe.success')}</p>
-              ) : (
-                <form onSubmit={handleSubscribe} className="space-y-4">
-                  <div className="flex gap-1">
+              ) : (                <form onSubmit={handleSubscribe} className="space-y-4">
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-0">
                     <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder={t('news.newsletter.placeholder')}
-                      className="flex-1 px-4 py-3 rounded-l border-r border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/20"
+                      className="flex-1 px-4 py-3 rounded-md sm:rounded-r-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/20 border border-gray-300"
                       required
                       disabled={isLoading}
                     />
@@ -214,7 +213,7 @@ const NewsPage: React.FC = () => {
                       type="submit"
                       variant="secondary" 
                       disabled={isLoading}
-                      className="!bg-white !text-primary-500 hover:!bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 ease-in-out hover:shadow-lg active:shadow-md rounded-l-none border-l border-gray-200 disabled:!bg-gray-200 disabled:!text-gray-400 disabled:cursor-not-allowed disabled:hover:scale-100"
+                      className="!bg-white !text-primary-500 hover:!bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 ease-in-out hover:shadow-lg active:shadow-md rounded-md sm:rounded-l-none disabled:!bg-gray-200 disabled:!text-gray-400 disabled:cursor-not-allowed disabled:hover:scale-100 px-6 py-3"
                     >
                       {isLoading ? '...' : t('news.newsletter.subscribe')}
                     </Button>
