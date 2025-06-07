@@ -69,7 +69,7 @@ const NewsPage: React.FC = () => {
       date: t('news.articles.guidanceSuccess.date'),
       readTime: t('news.articles.guidanceSuccess.readTime'),
       category: 'education',
-      image: '/news/news1/img.jpg',
+      image: '/news/news1/img1.jpg',
       featured: true,
       dateSort: '2025-05-25'
     },    {

@@ -79,7 +79,7 @@ const HomePage: React.FC = () => {
                   {t('activities.discover')} →
                 </a>
                 <a href="#contact" className="text-primary-500 hover:text-primary-600 font-medium">
-                  Get Involved →
+                  {t('activities.getInvolved.title')} →
                 </a>
               </div>
             </div>
