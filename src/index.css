@@ -7,13 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Prevent horizontal scrolling and ensure proper mobile behavior */
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-  max-width: 100vw;
-}
-
 /* Account for fixed header when scrolling to sections */
 section {
   scroll-margin-top: 6rem; /* Adjust based on header height */
@@ -23,15 +16,5 @@ section {
 @media (max-width: 768px) {
   section {
     scroll-margin-top: 5rem; /* Smaller margin for mobile */
-  }
-  
-  /* Ensure proper mobile container behavior */
-  .container {
-    width: 100%;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }

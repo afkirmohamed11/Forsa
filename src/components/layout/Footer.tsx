@@ -108,15 +108,32 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="text-primary-500 mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">{t('contact.info.addressValue')}</span>
+                <a 
+                  href="https://www.google.com/maps/place/Trougout/@35.1803487,-3.7720815,17z/data=!3m1!4b1!4m6!3m5!1s0xd742ae9ae8b8fa9:0xfcde253bacd3a1ad!8m2!3d35.1803487!4d-3.7720815!16s%2Fg%2F11c5r8x9z5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-primary-500 transition-colors cursor-pointer"
+                >
+                  {t('contact.info.addressValue')}
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-primary-500 mr-2 flex-shrink-0" />
-                <span className="text-gray-300">{t('contact.info.phoneValue')}</span>
+                <a 
+                  href="tel:+212675900514"
+                  className="text-gray-300 hover:text-primary-500 transition-colors cursor-pointer"
+                >
+                  {t('contact.info.phoneValue')}
+                </a>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="text-primary-500 mr-2 flex-shrink-0" />
-                <span className="text-gray-300">{t('contact.info.emailValue')}</span>
+                <a 
+                  href="mailto:association.forsa.trougout@gmail.com"
+                  className="text-gray-300 hover:text-primary-500 transition-colors cursor-pointer"
+                >
+                  {t('contact.info.emailValue')}
+                </a>
               </li>
               <li className="flex items-center">
                 <Clock size={18} className="text-primary-500 mr-2 flex-shrink-0" />
