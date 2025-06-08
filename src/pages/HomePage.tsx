@@ -33,12 +33,12 @@ const HomePage: React.FC = () => {
                   {t('home.cta.learnMore')}
                 </Button>
               </a>
-              <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
+              <Link to="/donate">
                 <Button variant="secondary" size="lg">
                   {t('home.cta.donate')}
                 </Button>
-              </a>
-              <a href="https://wa.me/212675900514" target="_blank" rel="noopener noreferrer">
+              </Link>
+              <a href="#contact">
                 <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm">
                   {t('home.cta.joinUs')}
                 </Button>
