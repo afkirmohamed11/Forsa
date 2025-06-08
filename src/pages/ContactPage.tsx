@@ -149,7 +149,7 @@ const ContactPage: React.FC = () => {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-200 mb-2">
+                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-200 mb-2 font-semibold">
                       {t('contact.form.name')}
                     </label>
                     <input
@@ -171,7 +171,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-200 mb-2">
+                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-200 mb-2 font-semibold">
                       {t('contact.form.email')}
                     </label>
                     <input
@@ -193,7 +193,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="subject" className="block text-gray-700 dark:text-gray-200 mb-2">
+                    <label htmlFor="subject" className="block text-gray-700 dark:text-gray-200 mb-2 font-semibold">
                       {t('contact.form.subject')}
                     </label>
                     <input
@@ -215,7 +215,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-gray-700 dark:text-gray-200 mb-2">
+                    <label htmlFor="message" className="block text-gray-700 dark:text-gray-200 mb-2 font-semibold">
                       {t('contact.form.message')}
                     </label>
                     <textarea
