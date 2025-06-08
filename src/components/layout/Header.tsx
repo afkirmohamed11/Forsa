@@ -66,10 +66,10 @@ const Header: React.FC = () => {
         isScrolled ? 'bg-white dark:bg-gray-800 shadow-md py-2' : 'bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm py-4'
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
-     <Link to="/" className="flex items-center">
-      <img src="/forsa.png" alt="Forsa Logo" className="h-8 w-auto" />
-      <span className="ml-2 text-xl font-bold text-gray-900 dark:text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+     <Link to="/" className="flex items-center flex-shrink-0">
+      <img src="/forsa.png" alt="Forsa Logo" className="h-6 sm:h-8 w-auto" />
+      <span className="ml-2 text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
         Forsa
       </span>
     </Link>
@@ -135,28 +135,29 @@ const Header: React.FC = () => {
         </div>
 
         {/* Mobile menu button */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center space-x-2">
           <button
             onClick={toggleTheme}
-            className="p-2 mr-2 rounded-full text-gray-700 dark:text-gray-200"
+            className="p-1.5 sm:p-2 rounded-full text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             aria-label="Toggle dark mode"
           >
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
           
           <button
             onClick={toggleMenu}
-            className="p-2 focus:outline-none text-gray-700 dark:text-gray-200"
+            className="p-1.5 sm:p-2 focus:outline-none text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md transition-colors"
+            aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-800 shadow-lg animate-fade-in">
-          <nav className="container mx-auto px-4 py-4 flex flex-col">
+        <div className="md:hidden bg-white dark:bg-gray-800 shadow-lg animate-fade-in border-t border-gray-200 dark:border-gray-700">
+          <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col max-h-[80vh] overflow-y-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
