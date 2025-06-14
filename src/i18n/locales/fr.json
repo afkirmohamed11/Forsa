@@ -160,7 +160,13 @@
       "submit": "Envoyer le Message",
       "success": "Votre message a été envoyé. Nous vous répondrons bientôt!",
       "successDescription": "Nous apprécions votre message et vous répondrons dès que possible.",
-      "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+      "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
+      "placeholders": {
+        "name": "Entrez votre nom complet",
+        "email": "votre.email@exemple.com",
+        "subject": "De quoi parle ce message ?",
+        "message": "Parlez-nous de votre demande, vos commentaires, ou comment vous aimeriez vous impliquer avec Forsa..."
+      }
     },
     "validation": {
       "nameRequired": "Le nom est requis",

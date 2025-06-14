@@ -76,13 +76,13 @@ const Header: React.FC = () => {
 
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-8">
-          <nav className="flex space-x-6">
+        <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+          <nav className="flex space-x-8 rtl:space-x-reverse">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`font-medium hover:text-primary-500 transition-colors ${
+                className={`font-medium hover:text-primary-500 transition-colors whitespace-nowrap ${
                   location.pathname === link.to 
                     ? 'text-primary-500 dark:text-primary-400' 
                     : 'text-gray-700 dark:text-gray-200'
@@ -93,7 +93,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 rtl:space-x-reverse">
             {/* Language Selector */}
             <div className="relative">
               <button

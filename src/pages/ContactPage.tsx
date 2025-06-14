@@ -158,7 +158,8 @@ const ContactPage: React.FC = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full max-w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 ${
+                      placeholder={t('contact.form.placeholders.name')}
+                      className={`w-full max-w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 ${
                         formErrors.name ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-gray-600'
                       }`}
                     />
@@ -180,7 +181,8 @@ const ContactPage: React.FC = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full max-w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 ${
+                      placeholder={t('contact.form.placeholders.email')}
+                      className={`w-full max-w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 ${
                         formErrors.email ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-gray-600'
                       }`}
                     />
@@ -202,7 +204,8 @@ const ContactPage: React.FC = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className={`w-full max-w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 ${
+                      placeholder={t('contact.form.placeholders.subject')}
+                      className={`w-full max-w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 ${
                         formErrors.subject ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-gray-600'
                       }`}
                     />
@@ -224,7 +227,8 @@ const ContactPage: React.FC = () => {
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
-                      className={`w-full max-w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 resize-vertical ${
+                      placeholder={t('contact.form.placeholders.message')}
+                      className={`w-full max-w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 resize-vertical ${
                         formErrors.message ? 'border-red-500 dark:border-red-500' : 'border-gray-300 dark:border-gray-600'
                       }`}
                     ></textarea>
@@ -273,7 +277,7 @@ const ContactPage: React.FC = () => {
                     href="https://www.google.com/maps/search/?api=1&query=Trougout,+Morocco"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-start w-full p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-200 cursor-pointer group"
+                    className="flex items-start w-full p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-300 cursor-pointer group hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg"
                   >
                     <div className="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900 group-hover:bg-primary-200 dark:group-hover:bg-primary-800 rounded-full flex items-center justify-center mr-4 transition-colors">
                       <MapPin size={20} className="text-primary-600 dark:text-primary-400 sm:w-6 sm:h-6" />
@@ -290,7 +294,7 @@ const ContactPage: React.FC = () => {
                 <li>
                   <a 
                     href="tel:+212675900514"
-                    className="flex items-start w-full p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-200 cursor-pointer group"
+                    className="flex items-start w-full p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-300 cursor-pointer group hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg"
                   >
                     <div className="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900 group-hover:bg-primary-200 dark:group-hover:bg-primary-800 rounded-full flex items-center justify-center mr-4 transition-colors">
                       <Phone size={20} className="text-primary-600 dark:text-primary-400 sm:w-6 sm:h-6" />
@@ -307,7 +311,7 @@ const ContactPage: React.FC = () => {
                 <li>
                   <a 
                     href="mailto:association.forsa.trougout@gmail.com"
-                    className="flex items-start w-full p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-200 cursor-pointer group"
+                    className="flex items-start w-full p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-300 cursor-pointer group hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg"
                   >
                     <div className="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900 group-hover:bg-primary-200 dark:group-hover:bg-primary-800 rounded-full flex items-center justify-center mr-4 transition-colors">
                       <Mail size={20} className="text-primary-600 dark:text-primary-400 sm:w-6 sm:h-6" />
@@ -321,7 +325,7 @@ const ContactPage: React.FC = () => {
                   </a>
                 </li>
                 
-                <li className="flex items-start w-full p-4 rounded-lg bg-gray-50 dark:bg-gray-700">
+                <li className="flex items-start w-full p-4 rounded-lg bg-gray-50 dark:bg-gray-700 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg">
                   <div className="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mr-4">
                     <Clock size={20} className="text-primary-600 dark:text-primary-400 sm:w-6 sm:h-6" />
                   </div>
@@ -344,7 +348,7 @@ const ContactPage: React.FC = () => {
                   href="https://wa.me/212675900514" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-colors w-full max-w-full"
+                  className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-300 w-full max-w-full hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg"
                 >
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-500 rounded-full flex items-center justify-center mb-2">
                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="sm:w-6 sm:h-6">
@@ -358,7 +362,7 @@ const ContactPage: React.FC = () => {
                   href="https://www.facebook.com/share/1BYkzYXvqt/?mibextid=wwXIfr" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-colors w-full max-w-full"
+                  className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-300 w-full max-w-full hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg"
                 >
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-full flex items-center justify-center mb-2">
                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="sm:w-6 sm:h-6">
@@ -372,7 +376,7 @@ const ContactPage: React.FC = () => {
                   href="https://www.instagram.com/association_forsa_trougout?igsh=MXE5OGlwajkza3Mzag%3D%3D&utm_source=qr" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-colors w-full max-w-full sm:col-span-2 xl:col-span-1"
+                  className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-primary-50 dark:hover:bg-primary-900 transition-all duration-300 w-full max-w-full sm:col-span-2 xl:col-span-1 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg"
                 >
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-500 rounded-full flex items-center justify-center mb-2">
                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="sm:w-6 sm:h-6">

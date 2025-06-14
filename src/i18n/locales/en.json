@@ -214,7 +214,13 @@
       "submit": "Send Message",
       "success": "Your message has been sent. We'll get back to you soon!",
       "successDescription": "We value your message and will respond as soon as possible.",
-      "error": "An error occurred while sending your message. Please try again."
+      "error": "An error occurred while sending your message. Please try again.",
+      "placeholders": {
+        "name": "Enter your full name",
+        "email": "your.email@example.com",
+        "subject": "What is this message about?",
+        "message": "Tell us about your inquiry, feedback, or how you'd like to get involved with Forsa..."
+      }
     },
     "validation": {
       "nameRequired": "Name is required",
