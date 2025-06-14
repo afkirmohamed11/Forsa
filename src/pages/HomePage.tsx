@@ -264,7 +264,6 @@ const HomePage: React.FC = () => {
 
       {/* Spacer Section */}
       <div className="h-16 bg-white dark:bg-gray-900"></div>
-      */
 
       {/* CTA Section */}
       <section id="contact" className="relative py-24 bg-gradient-to-r from-secondary-400 to-secondary-600 text-white">
